@@ -1,0 +1,17 @@
+# docker/docker-compose.yml
+services:
+  sec_filing_scanner:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: sec_filing_scanner
+    ports:
+      - "8007:8000"
+    environment:
+      - SEC_EMAIL=mohsinmahmood675@gmail.com
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    volumes:
+      - ..:/app
+      - ./data/db:/app/data/db
+      - ./sec-edgar-filings:/app/sec-edgar-filings
+      - ./embeddings/chromadb:/app/embeddings/chromadb
