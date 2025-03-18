@@ -22,7 +22,6 @@ var/
 *.egg
 venv/
 embeddings/chromadb/
-sec-edgar-filings/
 data/db/*.db
 .idea/
 .vscode/
