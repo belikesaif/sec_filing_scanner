@@ -1,0 +1,759 @@
+-----BEGIN PRIVACY-ENHANCED MESSAGE-----
+Proc-Type: 2001,MIC-CLEAR
+Originator-Name: webmaster@www.sec.gov
+Originator-Key-Asymmetric:
+ MFgwCgYEVQgBAQICAf8DSgAwRwJAW2sNKK9AVtBzYZmr6aGjlWyK3XmZv3dTINen
+ TWSM7vrzLADbmYQaionwg5sDW3P6oaM5D3tdezXMm7z1T+B+twIDAQAB
+MIC-Info: RSA-MD5,RSA,
+ KohhmMsgmSwpSavxtfTP61pdO8I4RwDxjE6oxbxb2KF8A8XdrXRtzq2kk8HNtoyo
+ oFiLpmDwJrCMUhnL9qhtxQ==
+
+<SEC-DOCUMENT>0000891020-96-001463.txt : 19961118
+<SEC-HEADER>0000891020-96-001463.hdr.sgml : 19961118
+ACCESSION NUMBER:		0000891020-96-001463
+CONFORMED SUBMISSION TYPE:	10-Q
+PUBLIC DOCUMENT COUNT:		3
+CONFORMED PERIOD OF REPORT:	19960930
+FILED AS OF DATE:		19961114
+SROS:			NASD
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			MICROSOFT CORP
+		CENTRAL INDEX KEY:			0000789019
+		STANDARD INDUSTRIAL CLASSIFICATION:	SERVICES-PREPACKAGED SOFTWARE [7372]
+		IRS NUMBER:				911144442
+		STATE OF INCORPORATION:			WA
+		FISCAL YEAR END:			0630
+
+	FILING VALUES:
+		FORM TYPE:		10-Q
+		SEC ACT:		1934 Act
+		SEC FILE NUMBER:	000-14278
+		FILM NUMBER:		96666210
+
+	BUSINESS ADDRESS:	
+		STREET 1:		ONE MICROSOFT WAY #BLDG 8
+		STREET 2:		NORTH OFFICE 2211
+		CITY:			REDMOND
+		STATE:			WA
+		ZIP:			98052
+		BUSINESS PHONE:		2068828080
+
+	MAIL ADDRESS:	
+		STREET 1:		ONE MICROSOFT WAY - BLDG 8
+		STREET 2:		NORTH OFFICE 2211
+		CITY:			REDMOND
+		STATE:			WA
+		ZIP:			98052-6399
+</SEC-HEADER>
+<DOCUMENT>
+<TYPE>10-Q
+<SEQUENCE>1
+<DESCRIPTION>FORM 10-Q FOR PERIOD ENDED 9/30/96
+<TEXT>
+
+<PAGE>   1
+================================================================================
+
+                                  UNITED STATES
+                       SECURITIES AND EXCHANGE COMMISSION
+                             WASHINGTON, D.C. 20549
+
+                               -----------------
+
+                                    FORM 10-Q
+
+              /X/ QUARTERLY REPORT PURSUANT TO SECTION 13 OR 15(d)
+                     OF THE SECURITIES EXCHANGE ACT OF 1934
+
+                FOR THE QUARTERLY PERIOD ENDED SEPTEMBER 30, 1996
+
+
+              / / TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d)
+                     OF THE SECURITIES EXCHANGE ACT OF 1934
+
+
+                  FOR THE TRANSITION PERIOD FROM _____ TO ____
+
+
+                               -----------------
+
+                         Commission File Number 0-14278
+
+                              MICROSOFT CORPORATION
+             (Exact name of registrant as specified in its charter)
+
+
+          WASHINGTON                                           91-1144442
+(State or other jurisdiction of                             (I.R.S. Employer
+incorporation or organization)                             Identification No.)
+
+
+              ONE MICROSOFT WAY, REDMOND, WASHINGTON    98052-6399
+             (Address of principal executive office)     (Zip Code)
+
+
+       Registrant's telephone number, including area code: (206) 882-8080
+
+
+
+Indicate by check mark whether the registrant (1) has filed all reports required
+to be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 during
+the preceding 12 months (or for such shorter period that the registrant was
+required to file such reports), and (2) has been subject to such filing
+requirements for the past 90 days. 
+
+     Yes |X| No |_|
+
+
+     The number of shares outstanding of the registrant's common stock as of
+October 31, 1996 was 597,593,969.
+
+================================================================================
+<PAGE>   2
+                              MICROSOFT CORPORATION
+
+                                    FORM 10-Q
+
+                    FOR THE QUARTER ENDED SEPTEMBER 30, 1996
+
+                                      INDEX
+
+
+PART I.  FINANCIAL INFORMATION
+
+<TABLE>
+<CAPTION>
+         Item 1.  Financial Statements                                                           Page
+                                                                                                 ----
+<S>                                                                                                <C>
+                  a)  Income Statements
+                      for the Three Months Ended September 30, 1996 and 1995...................    1
+
+                  b)  Balance Sheets
+                      as of September 30, 1996 and June 30, 1996...............................    2
+
+                  c)  Cash Flows Statements
+                      for the Three Months Ended September 30, 1996 and 1995...................    3
+
+                  d)  Notes to Financial Statements............................................    4
+
+         Item 2.  Management's Discussion and Analysis of Financial
+                  Condition and Results of Operations..........................................    5
+
+
+PART II.  OTHER INFORMATION
+
+         Item 1.  Legal Proceedings............................................................    8
+
+         Item 6.  Exhibits and Reports on Form 8-K.............................................    8
+
+
+SIGNATURE......................................................................................    9
+</TABLE>
+<PAGE>   3
+                          Part I. Financial Information
+
+ITEM 1.  FINANCIAL STATEMENTS
+
+MICROSOFT CORPORATION
+
+<TABLE>
+<CAPTION>
+INCOME STATEMENTS
+(In millions, except earnings per share)(Unaudited)
+- -----------------------------------------------------------------------------------------
+
+                                                                    Three Months Ended
+                                                                       September 30
+                                                                     1995        1996
+- -----------------------------------------------------------------------------------------
+<S>                                                                <C>         <C>
+Net revenues                                                       $2,016      $2,295
+- -----------------------------------------------------------------------------------------
+Operating expenses:
+  Cost of revenues                                                    322         250
+  Research and development                                            302         432
+  Sales and marketing                                                 621         625
+  General and administrative                                           63          86
+- -----------------------------------------------------------------------------------------
+    Total operating expenses                                        1,308       1,393
+- -----------------------------------------------------------------------------------------
+Operating income                                                      708         902
+Interest income                                                        66          92
+Other expenses                                                         (4)        (49)
+- -----------------------------------------------------------------------------------------
+Income before income taxes                                            770         945
+Provision for income taxes                                            271         331
+- -----------------------------------------------------------------------------------------
+Net income                                                         $  499      $  614
+=========================================================================================
+Earnings per share                                                 $ 0.78      $ 0.95
+=========================================================================================
+Weighted average shares outstanding                                   640         647
+=========================================================================================
+</TABLE>
+
+
+                             See accompanying notes.
+
+- --------------------------------------------------------------------------------
+
+                                       1
+<PAGE>   4
+MICROSOFT CORPORATION
+
+<TABLE>
+<CAPTION>
+BALANCE SHEETS
+(In millions)
+- -----------------------------------------------------------------------------------------------------------------------
+
+                                                                                              June 30         Sept. 30
+                                                                                                1996           1996 (1)
+- -----------------------------------------------------------------------------------------------------------------------
+<S>                                                                                           <C>              <C>
+ASSETS
+Current assets:
+  Cash and short-term investments                                                             $ 6,940          $ 7,098
+  Accounts receivable                                                                             639              855
+  Other                                                                                           260              279
+- -----------------------------------------------------------------------------------------------------------------------
+    Total current assets                                                                        7,839            8,232
+Property, plant, and equipment                                                                  1,326            1,304
+Equity investments                                                                                675              896
+Other assets                                                                                      253              308
+- -----------------------------------------------------------------------------------------------------------------------
+      Total assets                                                                            $10,093          $10,740
+=======================================================================================================================
+
+LIABILITIES AND STOCKHOLDERS' EQUITY
+Current liabilities:
+  Accounts payable                                                                            $   808          $   887
+  Accrued compensation                                                                            202              196
+  Income taxes payable                                                                            484              514
+  Unearned revenues                                                                               560              651
+  Other                                                                                           371              415
+- -----------------------------------------------------------------------------------------------------------------------
+    Total current liabilities                                                                   2,425            2,663
+- -----------------------------------------------------------------------------------------------------------------------
+Minority interest                                                                                 125              125
+- -----------------------------------------------------------------------------------------------------------------------
+Put warrants                                                                                      635              675
+- -----------------------------------------------------------------------------------------------------------------------
+Stockholders' equity:
+  Common stock and paid-in capital --
+    shares authorized 2,000;
+    shares outstanding 597 and 597                                                              2,924            3,220
+  Retained earnings                                                                             3,984            4,057
+- -----------------------------------------------------------------------------------------------------------------------
+    Total stockholders' equity                                                                  6,908            7,277
+- -----------------------------------------------------------------------------------------------------------------------
+      Total liabilities and stockholders' equity                                              $10,093          $10,740
+=======================================================================================================================
+</TABLE>
+
+(1)  Unaudited
+
+
+                             See accompanying notes.
+
+- --------------------------------------------------------------------------------
+
+                                       2
+<PAGE>   5
+MICROSOFT CORPORATION
+
+<TABLE>
+<CAPTION>
+CASH FLOWS STATEMENTS
+(In millions)(Unaudited)
+- -----------------------------------------------------------------------------------------------------------------
+
+                                                                                             Three Months Ended
+                                                                                                September 30
+                                                                                            1995            1996
+- -----------------------------------------------------------------------------------------------------------------
+<S>                                                                                       <C>             <C>
+CASH FLOWS FROM OPERATIONS
+  Net income                                                                              $  499          $  614
+  Depreciation and amortization                                                               69             162
+  Current liabilities                                                                        410             227
+  Accounts receivable                                                                       (504)           (205)
+  Other current assets                                                                        26             (15)
+- -----------------------------------------------------------------------------------------------------------------
+    Net cash from operations                                                                 500             783
+- -----------------------------------------------------------------------------------------------------------------
+CASH FLOWS USED FOR FINANCING
+  Common stock issued                                                                         98             215
+  Common stock repurchased                                                                  (129)           (697)
+  Stock option income tax benefits                                                            58             106
+- -----------------------------------------------------------------------------------------------------------------
+    Net cash used for financing                                                               27            (376)
+- -----------------------------------------------------------------------------------------------------------------
+CASH FLOWS USED FOR INVESTMENTS
+  Additions to property, plant, and equipment                                               (116)            (99)
+  Equity investments and other                                                               (98)           (156)
+  Short-term investments                                                                    (370)            259
+- -----------------------------------------------------------------------------------------------------------------
+    Net cash used for investments                                                           (584)              4
+- -----------------------------------------------------------------------------------------------------------------
+Net change in cash and equivalents                                                           (57)            411
+Effect of exchange rates on cash                                                               1               6
+Cash and equivalents, beginning of period                                                  1,962           2,601
+- -----------------------------------------------------------------------------------------------------------------
+Cash and equivalents, end of period                                                        1,906           3,018
+Short-term investments, end of period                                                      3,158           4,080
+- -----------------------------------------------------------------------------------------------------------------
+
+Cash and short-term investments, end of period                                            $5,064          $7,098
+================================================================================================================
+</TABLE>
+
+
+                             See accompanying notes.
+
+- --------------------------------------------------------------------------------
+
+                                       3
+<PAGE>   6
+MICROSOFT CORPORATION
+
+NOTES TO FINANCIAL STATEMENTS
+(Unaudited)
+- --------------------------------------------------------------------------------
+
+BASIS OF PRESENTATION
+
+In the opinion of management, the accompanying balance sheets and related
+interim statements of income and cash flows include all adjustments (consisting
+only of normal recurring items) necessary for their fair presentation in
+conformity with generally accepted accounting principles. Preparing financial
+statements requires management to make estimates and assumptions that affect the
+reported amounts of assets, liabilities, revenues, and expenses. Examples
+include provisions for returns and bad debts and the length of product life
+cycles and buildings' lives. Actual results may differ from these estimates.
+Interim results are not necessarily indicative of results for a full year. The
+information included in this Form 10-Q should be read in conjunction with
+Management's Discussion and Analysis and financial statements and notes thereto
+included in the Microsoft Corporation 1996 Annual Report on Form 10-K.
+
+EARNINGS PER SHARE
+
+Earnings per share is computed on the basis of the weighted average number of
+common shares outstanding plus the effect of outstanding stock options, using
+the treasury stock method.
+
+CONTINGENCIES
+
+In connection with an ongoing investigation, the Antitrust Division of the U.S.
+Department of Justice requested information from Microsoft in September 1996
+concerning Web browsers. Microsoft is also subject to various legal proceedings
+and claims that arise in the ordinary course of business. Management currently
+believes that resolving these matters will not have a material adverse impact on
+the Company's financial position or its results of operations.
+
+SUBSEQUENT EVENTS
+
+During October 1996, Microsoft and a subsidiary of Tele-Communications, Inc.
+(TCI) terminated a partnership under which TCI owned a 20% minority interest in
+The Microsoft Network, LLC, owner of the business assets of MSN, The Microsoft
+Network, an online service. Due to the evolving nature of the online industry
+and MSN's move to a Web-based offering, the original direction of the
+partnership changed and both Microsoft and TCI agreed to terminate this
+partnership focused exclusively on MSN. In return for approximately $125 
+million of TCI securities, Microsoft became the sole owner of MSN. There was 
+no other material financial impact of the dissolution.
+
+On November 12, 1996, the Company's Board of Directors approved a two-for-one
+stock split, effective November 22, 1996. Share and per share amounts have not
+been restated for the upcoming stock split.
+
+- --------------------------------------------------------------------------------
+
+                                       4
+<PAGE>   7
+ITEM 2.  MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND
+         RESULTS OF OPERATIONS
+
+RESULTS OF OPERATIONS
+
+Microsoft develops, manufactures, licenses, sells, and supports a wide range of
+software products, including operating systems for personal computers (PCs) and
+servers, server applications for client/server environments, business and
+consumer productivity applications, interactive media programs, and Internet
+platform and development tools. Microsoft also offers online services, sells
+personal computer books and input devices, and researches and develops advanced
+technology software products.
+
+REVENUES
+
+Revenues for the first quarter of fiscal 1997 increased 14% over revenues for
+the first quarter of fiscal 1996. Revenues experienced large growth in the first
+quarter of the prior year due to the introduction of the Microsoft(R) Windows
+95(R) operating system.
+
+Software license volume increases have been the principal factor in Microsoft's
+revenue growth. The average selling price per license has decreased, primarily
+because of general shifts in the sales mix from retail packaged products to
+licensing programs, from new products to product upgrades, and from stand-alone
+desktop applications to integrated product suites. Average revenue per license
+from original equipment manufacturer (OEM) licenses and corporate license
+programs, such as Microsoft Select, is lower than average revenue per license
+from retail versions. Likewise, product upgrades have lower prices than new
+products. Also, prices of integrated suites, such as Microsoft Office, are less
+than the sum of the prices for the individual programs included in these suites
+when such programs are licensed separately.
+
+A portion of the Company's revenues will be earned later than billed. Unearned
+revenues as of September 30, 1996 on the accompanying balance sheet were $651
+million. Approximately $525 million of this amount represented the unearned
+portion of Windows-based desktop operating systems revenues attributable to
+future support commitments, Internet browser updates, and other unspecified
+enhancements that will be recognized ratably over the products' life cycles. The
+balance of unearned revenues was primarily attributable to maintenance and other
+subscription contracts.
+
+PRODUCT GROUPS
+
+Platforms product group revenues were $1.19 billion in the first quarter of
+1997, compared to $1.04 billion for the same period of 1996, an increase of 15%.
+Platforms product group revenues are primarily from licenses of PC operating
+systems, business systems with client/server architectures, and software
+development tools.
+
+As expected, revenues from retail upgrade versions of Microsoft Windows 95
+decreased compared to the comparable quarter of the prior year, the quarter
+during which Windows 95 was released. Total Windows 95 unit volume continued to
+build, as units licensed through the OEM channel increased strongly.
+
+Windows NT(R) 4.0 was released during the first quarter of 1997, fueling revenue
+increases for both Windows NT Workstation and Windows NT Server. Additionally,
+revenues from server applications in the BackOffice(TM) family of business
+systems were strong.
+
+Applications and content product group revenues were $1.11 billion in the first
+quarter of 1997, increasing 13% from $977 million in the first quarter of 1996.
+Applications and content product group revenues include primarily licenses of
+desktop and consumer productivity applications, interactive media programs,
+and PC input devices. Most desktop application revenues are generated by
+integrated suites. The primary programs in Microsoft Office are the Microsoft
+Word word processor, the Microsoft Excel spreadsheet, and the Microsoft 
+PowerPoint(R) presentation graphics program. Various versions of Office, which
+are available for Windows 32-bit, Windows 16-bit, and Macintosh operating 
+systems, also include applications such as the Microsoft Access(R) database 
+management program, the Microsoft Schedule+ calendar and scheduling program, 
+and an email client license. Increases in applications and content revenues 
+were led by strong sales of 32-bit Windows versions of Microsoft Office.
+
+SALES CHANNELS
+
+Microsoft distributes its products primarily through OEM licenses, corporate
+licenses, and retail packaged products. OEM channel revenues are license fees
+from original equipment manufacturers. Microsoft has three major geographic
+sales and marketing organizations: the U.S. and Canada, Europe, and elsewhere in
+the world (Other International). Sales of corporate licenses and packaged
+products in these channels are primarily to distributors and resellers.
+
+- --------------------------------------------------------------------------------
+
+                                       5
+<PAGE>   8
+OEM earned revenues were $663 million in the first quarter compared to the $548
+million recorded in the comparable quarter of the prior year. The primary source
+of OEM revenues is the licensing of desktop operating systems. Higher levels of
+PC shipments was the principal driver of increased revenues through the OEM
+channel. The percentage of new PCs with Windows 95 preinstalled increased to
+more than 70% of reported shipments during the first quarter of 1997, while
+MS-DOS and Windows 3.x continued to be preinstalled on many of the remainder of
+PCs sold by OEMs. The above-mentioned ratable revenue recognition policy was
+extended to operating systems licensed through the OEM channel in the third
+quarter of the prior fiscal year.
+
+Revenues in the U.S. and Canada were $812 million in the first quarter of 1997
+compared to $745 million in the first quarter of 1996. Revenues in Europe were
+$427 million in the first quarter of 1997 compared to $426 million in the prior
+year. Growth rates slowed in the U.S. and Canada and European channels due to
+the strong sales of Windows 95 the prior year, reflecting typical retail upgrade
+sales patterns of new versions of PC operating systems. Other International
+channel revenues increased 32% to $393 million in the first quarter of 1997 from
+$297 million in the first quarter of 1996, reflecting strong sales in Japan. The
+Japanese version of Windows 95 was released in Japan during the second quarter
+of fiscal 1996.
+
+Excluding the impact of the shipment of Windows 95 retail upgrades and 32-bit
+versions of desktop applications in the first quarter of fiscal 1996, the trend
+has continued toward a higher percentage of corporate licensing (versus packaged
+products).
+
+Microsoft's operating results are affected by foreign exchange rates. Had the
+exchange rates in effect during the first quarter of the prior year been in
+effect during the first quarter of 1997, translated revenues in Europe would
+have been $23 million higher and translated Other International revenues would
+have been $28 million higher. Since much of Microsoft's international
+manufacturing costs and operating expenses are also incurred in local
+currencies, the relative translation impact of exchange rates on net income is
+less than on revenues. Also, a portion of planned translated international
+finished goods revenues in fiscal 1997 is hedged with purchased options.
+
+OPERATING EXPENSES, NONOPERATING ITEMS, AND INCOME TAXES
+
+Cost of revenues as a percentage of revenues was 10.9% in the first quarter of
+1997 compared to 16.0% in the first quarter of 1996. The decrease was primarily
+due to high shipments of retail upgrade versions of Windows 95 and Microsoft
+Office for Windows 95 in the comparable quarter. Cost of revenues also decreased
+because of general trends toward more corporate licensing and more shipments of
+products on CD-ROM, which carry lower cost of goods than floppy disks.
+
+Research and development expenses increased 43% to $432 million (18.8% of
+revenues) in the first quarter of 1997 from $302 million (15.0% of revenues) in
+the corresponding quarter of 1996. The increase in research and development
+expenses resulted primarily from planned hiring of software developers and
+higher levels of third-party development costs.
+
+Sales and marketing expenses were $625 million in the first quarter of 1997,
+flat with the comparable quarter's $621 million. As a percentage of revenues,
+sales and marketing expenses were 27.2% and 30.8% in the respective first
+quarters of 1997 and 1996. Sales and marketing expenses as a percent of revenues
+decreased due to the high level of marketing and support associated with the
+launch of Windows 95 in the prior year.
+
+General and administrative expenses were $86 million (3.8% of revenues) in the
+first quarter of 1997 and $63 million (3.1% of revenues) in the first quarter of
+1996. The increase was due to growth in the systems and number of people
+necessary to support overall increases in the scope of the Company's operations.
+
+Interest income increased as a result of a larger investment portfolio generated
+by cash from operations.
+
+Other expenses increased in the first quarter of 1997 due to recognition of the
+Company's share of operational expenses of joint ventures, including DreamWorks
+Interactive and the MSNBC entities.
+
+The effective income tax rate was 35% in both periods.
+
+NET INCOME
+
+Net income for the first quarter of 1997 was $614 million. Net income as a
+percentage of revenues was 26.8% in the first quarter of 1997 compared with
+24.8% in the first quarter of 1996. The increase in net income as a percentage
+of revenues was primarily the result of substantial reductions in relative cost
+of revenues and sales and marketing expenses, partially offset by increases in
+research and development and funding of joint ventures.
+
+- --------------------------------------------------------------------------------
+
+                                       6
+<PAGE>   9
+FINANCIAL CONDITION
+
+Microsoft's cash and short-term investment portfolio totaled $7.10 billion at
+September 30, 1996. The portfolio is diversified among security types,
+industries, and individual issuers. Microsoft's investments are generally liquid
+and investment grade. The portfolio is invested predominantly in U.S. dollar
+denominated securities, but also includes foreign currency positions in
+anticipation of continued international expansion. The portfolio is primarily
+invested in short-term securities to minimize interest rate risk and facilitate
+rapid deployment in the event of immediate cash needs.
+
+Microsoft has no material long-term debt and has $70 million of standby
+multicurrency lines of credit that support foreign currency hedging and
+international cash management.
+
+Stockholders' equity at September 30, 1996 was $7.28 billion.
+
+Cash generated from operations has been sufficient historically to fund
+Microsoft's investment in research and development activities and facilities
+expansion. As Microsoft grows, research and development investments will
+continue in existing and advanced areas of technology. Microsoft's cash will be
+used to acquire technology and to fund ventures and other strategic
+opportunities. Additions to property, plant, and equipment are expected to
+continue, including new facilities and computer systems for research and
+development, sales and marketing, product support, and administrative staff. On
+September 30, 1996, commitments for constructing new buildings approximated $360
+million.
+
+Employees exercising stock options provide additional cash. These proceeds have
+funded Microsoft's open market stock repurchase program through which Microsoft
+provides shares for stock option and stock purchase plans. This practice is
+continuing in 1997.
+
+To enhance its stock repurchase program, Microsoft sold equity put warrants to
+independent third parties. These put warrants entitle the holders to sell shares
+of Microsoft common stock to the Company on certain dates at specified prices.
+On September 30, 1996, 14 million warrants were outstanding with strike prices
+ranging between $100 and $110 per share. The warrants expire at various dates
+between the second quarter of fiscal 1997 and the second quarter of fiscal 1998,
+are exercisable only at maturity, and are settleable in cash at Microsoft's
+option. The maximum potential repurchase obligation as of September 30, 1996,
+$675 million, has been reclassified from stockholders' equity to put warrants.
+
+During 1996, Microsoft and National Broadcasting Company (NBC) established two
+joint ventures: a 24-hour cable news and information channel and an interactive
+online news service. Microsoft agreed to pay $220 million over a five-year 
+period for its interest in the cable venture and to pay one-half of operational
+funding of both joint ventures for a multiyear period.
+
+Management believes existing cash and short-term investments together with funds
+generated from operations will be sufficient to meet operating requirements for
+the next twelve months. Microsoft's cash and short-term investments are also
+managed to be available for strategic investment opportunities or other
+potential large-scale cash needs that may arise in pursuit of Microsoft's
+long-term strategies. Additionally, Microsoft shareholders have authorized the
+issuance of up to 100 million shares of preferred stock, which may be used by
+Microsoft for any proper corporate purpose.
+
+Microsoft has not paid cash dividends on its common stock.
+
+- --------------------------------------------------------------------------------
+
+                                       7
+<PAGE>   10
+                           Part II. Other Information
+
+ITEM 1.  LEGAL PROCEEDINGS
+
+See Notes to Financial Statements.
+
+ITEM 6.  EXHIBITS AND REPORTS ON FORM 8-K
+
+(A)  EXHIBITS
+     11. Computation of Earnings Per Share is on page 10.
+(B)  REPORTS ON FORM 8-K
+     No reports on Form 8-K were filed by Microsoft during the quarter ended
+September 30, 1996.
+
+ITEMS 2, 3, 4 AND 5 ARE NOT APPLICABLE AND HAVE BEEN OMITTED.
+
+
+- --------------------------------------------------------------------------------
+
+                                       8
+<PAGE>   11
+                                    Signature
+
+Pursuant to the requirements of the Securities Exchange Act of 1934, the
+registrant has duly caused this report to be signed on its behalf by the
+undersigned thereunto duly authorized.
+
+
+                                     Microsoft Corporation
+
+
+   Date:  November 13, 1996          By:  /s/   Michael W. Brown
+                                          ----------------------
+                                          Michael W. Brown,
+                                          Vice President, Finance;
+                                          Chief Financial Officer
+
+
+                                          (Principal Financial and Accounting 
+                                           Officer and Duly Authorized Officer)
+
+
+- --------------------------------------------------------------------------------
+
+                                       9
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>EX-11
+<SEQUENCE>2
+<DESCRIPTION>COMPUTATION OF EARNINGS PER SHARE
+<TEXT>
+
+<PAGE>   1
+                                                                     EXHIBIT 11.
+
+MICROSOFT CORPORATION
+COMPUTATION OF EARNINGS PER SHARE
+(In millions, except earnings per share) (Unaudited)
+- --------------------------------------------------------------------------------
+
+<TABLE>
+<CAPTION>
+                                                                      Three Months Ended
+                                                                          September 30
+                                                                        1995        1996
+- ----------------------------------------------------------------------------------------------
+<S>                                                                  <C>         <C>
+Weighted average number of common shares outstanding                     589         597
+Common stock equivalents from outstanding stock options                   51          50
+- ----------------------------------------------------------------------------------------------
+Average common and common stock equivalents outstanding                  640         647
+==============================================================================================
+Net income                                                             $ 499       $ 614
+==============================================================================================
+Earnings per share (1)                                                 $0.78       $0.95
+==============================================================================================
+</TABLE>
+
+
+(1) Fully diluted earnings per share have not been presented because the effects
+    are not material.
+
+- --------------------------------------------------------------------------------
+
+                                       10
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>EX-27
+<SEQUENCE>3
+<DESCRIPTION>FINANCIAL DATA SCHEDULE
+<TEXT>
+
+<TABLE> <S> <C>
+
+<ARTICLE> 5
+<LEGEND>
+THIS SCHEDULE CONTAINS SUMMARY FINANCIAL INFORMATION EXTRACTED FROM THE
+ACCOMPANYING FINANCIAL STATEMENTS AND IS QUALIFIED IN ITS ENTIRETY BY REFERENCE
+TO SUCH FINANCIAL STATEMENTS.
+</LEGEND>
+       
+<S>                             <C>
+<PERIOD-TYPE>                   3-MOS
+<FISCAL-YEAR-END>                          JUN-30-1997
+<PERIOD-END>                               SEP-30-1996
+<CASH>                                           7,098
+<SECURITIES>                                         0
+<RECEIVABLES>                                      855
+<ALLOWANCES>                                         0
+<INVENTORY>                                          0
+<CURRENT-ASSETS>                                 8,232
+<PP&E>                                           2,404
+<DEPRECIATION>                                   1,100
+<TOTAL-ASSETS>                                  10,740
+<CURRENT-LIABILITIES>                            2,663
+<BONDS>                                              0
+<PREFERRED-MANDATORY>                                0
+<PREFERRED>                                          0
+<COMMON>                                         3,220
+<OTHER-SE>                                       4,057
+<TOTAL-LIABILITY-AND-EQUITY>                    10,740
+<SALES>                                          2,295
+<TOTAL-REVENUES>                                 2,295
+<CGS>                                              250
+<TOTAL-COSTS>                                      250
+<OTHER-EXPENSES>                                 1,143
+<LOSS-PROVISION>                                     0
+<INTEREST-EXPENSE>                                   0
+<INCOME-PRETAX>                                    945
+<INCOME-TAX>                                       331
+<INCOME-CONTINUING>                                614
+<DISCONTINUED>                                       0
+<EXTRAORDINARY>                                      0
+<CHANGES>                                            0
+<NET-INCOME>                                       614
+<EPS-PRIMARY>                                     0.95
+<EPS-DILUTED>                                     0.95
+        
+
+</TABLE>
+</TEXT>
+</DOCUMENT>
+</SEC-DOCUMENT>
+-----END PRIVACY-ENHANCED MESSAGE-----

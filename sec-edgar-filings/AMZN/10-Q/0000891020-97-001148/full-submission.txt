@@ -1,0 +1,1257 @@
+-----BEGIN PRIVACY-ENHANCED MESSAGE-----
+Proc-Type: 2001,MIC-CLEAR
+Originator-Name: webmaster@www.sec.gov
+Originator-Key-Asymmetric:
+ MFgwCgYEVQgBAQICAf8DSgAwRwJAW2sNKK9AVtBzYZmr6aGjlWyK3XmZv3dTINen
+ TWSM7vrzLADbmYQaionwg5sDW3P6oaM5D3tdezXMm7z1T+B+twIDAQAB
+MIC-Info: RSA-MD5,RSA,
+ EA8wP4EJ1aofn3wNjHXvYqpXzR6GMf4Bz9Y70HsR2k133p7FODrUtk4OmN9dGSoW
+ Tmhu+MdHUHbxrFPB5Qw1Xw==
+
+<SEC-DOCUMENT>0000891020-97-001148.txt : 19970815
+<SEC-HEADER>0000891020-97-001148.hdr.sgml : 19970815
+ACCESSION NUMBER:		0000891020-97-001148
+CONFORMED SUBMISSION TYPE:	10-Q
+PUBLIC DOCUMENT COUNT:		3
+CONFORMED PERIOD OF REPORT:	19970630
+FILED AS OF DATE:		19970814
+SROS:			NASD
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			AMAZON COM INC
+		CENTRAL INDEX KEY:			0001018724
+		STANDARD INDUSTRIAL CLASSIFICATION:	BOOKS: PUBLISHING OR PUBLISHING AND PRINTING [2731]
+		IRS NUMBER:				911646860
+		STATE OF INCORPORATION:			DE
+		FISCAL YEAR END:			1231
+
+	FILING VALUES:
+		FORM TYPE:		10-Q
+		SEC ACT:		1934 Act
+		SEC FILE NUMBER:	000-22513
+		FILM NUMBER:		97661331
+
+	BUSINESS ADDRESS:	
+		STREET 1:		1516 SECOND AVE 4TH FLOOR
+		STREET 2:		PO BOX 80387
+		CITY:			SEATTLE
+		STATE:			WA
+		ZIP:			98101
+		BUSINESS PHONE:		2066222335
+
+	MAIL ADDRESS:	
+		STREET 1:		PO BOX 80387
+		STREET 2:		1516 SECOND AVE 4TH FLOOR
+		CITY:			SEATTLE
+		STATE:			WA
+		ZIP:			98101
+</SEC-HEADER>
+<DOCUMENT>
+<TYPE>10-Q
+<SEQUENCE>1
+<DESCRIPTION>EDGAR FORM 10-Q FOR AMAZON.COM, INC
+<TEXT>
+
+<PAGE>   1
+================================================================================
+
+
+                                  UNITED STATES
+                       SECURITIES AND EXCHANGE COMMISSION
+                             Washington, D.C. 20549
+
+
+                                    FORM 10-Q
+
+
+
+                QUARTERLY REPORT PURSUANT TO SECTION 13 OR 15(d)
+                     OF THE SECURITIES EXCHANGE ACT OF 1934
+
+
+
+        For the quarter ended JUNE 30, 1997 Commission File No. 000-22513
+
+
+
+                                AMAZON.COM, INC.
+
+
+             (Exact name of registrant as specified in its charter)
+
+
+
+           Delaware                                          91-1646860
+
+(State or other jurisdiction of                            (I.R.S. Employer
+incorporation or organization)                             Identification No.)
+
+
+
+                 1516 Second Avenue, Seattle, Washington, 98101
+               (address of principal executive offices, Zip Code)
+
+
+
+        Registrant's telephone number, including area code (206) 622-2335
+
+
+
+Indicate by check mark whether the registrant (1) has filed all reports required
+to be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 during
+the preceding 12 months (or for such shorter period that the registrant was
+required to file such reports), and (2) has been subject to such filing
+requirements for the past 90 days. Yes  X  No
+                                      -----  -----
+
+
+          23,858,702 shares of $0.01 par value common stock outstanding
+                              as of July 31, 1997
+
+
+                                  Page 1 of 16
+                            Exhibit Index on Page 15
+
+
+================================================================================
+
+
+<PAGE>   2
+
+
+
+                                AMAZON.COM, INC.
+
+                                    FORM 10-Q
+                       FOR THE QUARTER ENDED JUNE 30, 1997
+
+                                      INDEX
+
+
+<TABLE>
+<CAPTION>
+PART I - FINANCIAL INFORMATION                                                                                         PAGE
+                                                                                                                       ---- 
+    <S>                                                                                                                 <C>
+     Item 1.    Financial Statements                                                                                      3
+
+     Item 2.    Management's Discussion and Analysis of Financial Condition and Results of Operations                     7
+
+
+
+PART II - OTHER INFORMATION
+
+     Item 1.    Legal Proceedings                                                                                        13
+
+     Item 2.    Changes in Securities                                                                                    13
+
+     Item 3.    Defaults Upon Senior Securities                                                                          13
+
+     Item 4.    Submission of Matters to a Vote of Security Holders                                                      13
+
+     Item 5.    Other Information                                                                                        13
+
+     Item 6.    Exhibits and Reports on Form 8-K                                                                         13
+
+
+
+Signatures                                                                                                               14
+
+Exhibit Index                                                                                                            15
+</TABLE>
+
+
+                                     Page 2
+
+
+<PAGE>   3
+
+
+PART I - FINANCIAL INFORMATION
+
+ITEM 1.           FINANCIAL STATEMENTS
+
+                                AMAZON.COM, INC.
+
+                                 BALANCE SHEETS
+
+
+<TABLE>
+<CAPTION>
+- ------------------------------------------------------------------------------------------------------------------------------
+                                                                                      June 30,                  Dec. 31,
+                                                                                        1997                      1996
+- ------------------------------------------------------------------------------------------------------------------------------
+(in thousands, except share data)                                                    (unaudited)
+<S>                                                                                <C>                       <C>         
+ASSETS
+CURRENT ASSETS:
+    Cash and cash equivalents                                                      $     47,700              $      6,248
+    Short-term investments                                                                8,692                         -
+    Inventories                                                                           1,652                       571
+    Prepaid expenses and other                                                            1,162                       321
+                                                                                   ----------------          -----------------
+       TOTAL CURRENT ASSETS                                                              59,206                     7,140
+
+Equipment, net                                                                            3,564                       985
+Deposits                                                                                    328                       146
+                                                                                   ----------------          -----------------
+       TOTAL ASSETS                                                                $     63,098              $      8,271
+                                                                                   ================          =================
+
+LIABILITIES AND STOCKHOLDERS' EQUITY
+CURRENT LIABILITIES:
+    Accounts payable                                                               $     10,327              $      2,852
+    Accrued advertising                                                                   3,172                       598
+    Accrued product development                                                               -                       500
+    Other liabilities and accrued expenses                                                3,858                       920
+                                                                                   ----------------          -----------------
+       TOTAL CURRENT LIABILITIES                                                         17,357                     4,870
+
+LONG-TERM LEASE OBLIGATIONS                                                                 181                         -
+
+STOCKHOLDERS' EQUITY:
+    Preferred stock, $0.01 par value -
+       Authorized, 10,000,000 shares
+       Issued and outstanding, none
+         and 569,396 shares, respectively                                                     -                         6
+    Common stock, $0.01 par value -
+       Authorized, 100,000,000 shares
+       Issued and outstanding, 23,858,702
+         and 15,900,229 shares, respectively                                                238                       159
+    Additional paid-in capital                                                           63,749                     9,873
+    Deferred compensation                                                                (2,659)                     (612)
+    Accumulated deficit                                                                 (15,768)                   (6,025)
+                                                                                   ----------------          -----------------
+       TOTAL STOCKHOLDERS' EQUITY                                                        45,560                     3,401
+
+                                                                                   ----------------          -----------------
+       TOTAL LIABILITIES AND STOCKHOLDERS' EQUITY                                  $     63,098              $      8,271
+                                                                                   ================          =================
+</TABLE>
+
+SEE NOTES TO FINANCIAL STATEMENTS
+
+
+                                     Page 3
+
+
+<PAGE>   4
+
+
+                                AMAZON.COM, INC.
+
+                            STATEMENTS OF OPERATIONS
+
+                                   (UNAUDITED)
+
+
+<TABLE>
+<CAPTION>
+  ----------------------------------------------------------------------------------------------------------------------------
+                                                                Quarter Ended                        Six Months Ended
+                                                      -----------------------------------    ---------------------------------
+                                                           June 30,         June 30,             June 30,         June 30,
+                                                             1997             1996                 1997             1996
+  ----------------------------------------------------------------------------------------------------------------------------
+  (in thousands, except per share data)
+<S>                                                      <C>               <C>                  <C>              <C>      
+  Net sales                                              $   27,855        $    2,230           $   43,860       $   3,105
+  Cost of sales                                              22,633             1,753               35,117           2,448
+                                                      -----------------------------------    ---------------------------------
+       Gross profit                                           5,222               477                8,743             657
+
+  Operating expenses:
+     Marketing and sales                                      7,773               696               11,679             901
+     Product development                                      2,808               394                4,383             657
+     General and administrative                               1,708               163                2,850             211
+                                                      -----------------------------------    ---------------------------------
+         Total operating expenses                            12,289             1,253               18,912           1,769
+
+  Loss from operations                                       (7,067)             (776)             (10,169)         (1,112)
+  Interest income                                               362                 9                  426              14
+                                                      -----------------------------------    ---------------------------------
+
+  Net loss                                               $   (6,705)       $     (767)          $   (9,743)      $  (1,098)
+                                                      ===================================    =================================
+
+  Net loss per share                                     $   (0.28)        $   (0.03)           $   (0.42)       $  (0.05)
+                                                      ===================================    =================================
+
+  Shares used in computation of net loss per share           23,646            22,431               23,332          22,341
+                                                      ===================================    =================================
+</TABLE>
+
+
+  SEE NOTES TO FINANCIAL STATEMENTS
+
+
+                                     Page 4
+
+
+<PAGE>   5
+
+
+
+                                AMAZON.COM, INC.
+
+                            STATEMENTS OF CASH FLOWS
+
+                                   (UNAUDITED)
+
+
+<TABLE>
+<CAPTION>
+- --------------------------------------------------------------------------------- ---------------- -------- ----------------
+                                                                                     June 30,                  June 30,
+FOR THE SIX MONTHS ENDED                                                               1997                      1996
+- --------------------------------------------------------------------------------- ---------------- -------- ----------------
+(in thousands)
+<S>                                                                                 <C>                       <C>       
+OPERATING ACTIVITIES:
+    Net loss                                                                        $  (9,743)                $  (1,098)
+    Adjustments to reconcile net loss
+    to net cash provided by (used in) operating activities:
+       Depreciation and amortization                                                    1,022                        45
+       Amortization of unearned compensation - stock options                              625                         -
+       Changes in operating assets and liabilities:
+          Inventories                                                                  (1,081)                      (87)
+          Prepaid expenses and other assets                                              (841)                        9
+          Deposits                                                                       (182)                      (30)
+          Accounts payable                                                              7,475                       219
+          Accrued advertising and other accrued expenses                                5,331                       685
+                                                                                  ----------------          ----------------
+    Net cash provided by (used in) operating activities                                 2,606                      (257)
+
+INVESTING ACTIVITIES:
+    Purchases of marketable securities                                                 (8,692)                        -
+    Additions to equipment                                                             (2,239)                     (235)
+                                                                                  ----------------          ----------------
+       Net cash used for investing activities                                         (10,931)                     (235)
+
+FINANCING ACTIVITIES:
+    Proceeds from initial public offering                                              49,103                         -
+    Proceeds from exercise of stock options and sale of stock                             474                        36
+    Proceeds from sale of preferred stock                                                 200                     7,970
+                                                                                  ----------------          ----------------
+       Net cash provided by financing activities                                       49,777                     8,006
+
+                                                                                  ----------------          ----------------
+Net increase in cash and cash equivalents                                              41,452                     7,514
+
+Cash and cash equivalents at beginning of period                                        6,248                       996
+
+                                                                                  ----------------          ----------------
+Cash and cash equivalents at end of period                                          $  47,700                 $   8,510
+                                                                                  ================          ================
+
+SUPPLEMENTAL CASH FLOW INFORMATION
+
+Common stock issued for software and
+    accrued product development                                                     $   1,500                 $       -
+Equipment acquired under capital lease                                                    362                         -
+</TABLE>
+
+SEE NOTES TO FINANCIAL STATEMENTS
+
+
+                                     Page 5
+
+
+<PAGE>   6
+
+
+                                AMAZON.COM, INC.
+                          NOTES TO FINANCIAL STATEMENTS
+                                   (UNAUDITED)
+
+
+NOTE 1 - ACCOUNTING POLICIES
+
+Description of Business
+
+Amazon.com, Inc. (the Company) was incorporated on July 5, 1994. The Company is
+an online retailer of books and other information-based products on the
+Company's Internet site, and offers more than 2.5 million titles.
+
+Unaudited Interim Financial Information
+
+The financial statements as of June 30, 1997 and 1996 have been prepared by the
+Company pursuant to the rules and regulations of the Securities and Exchange
+Commission (SEC). These statements are unaudited and, in the opinion of
+management, include all adjustments (consisting of normal recurring adjustments
+and accruals) necessary to present fairly the results for the periods presented.
+The balance sheet at December 31, 1996 has been derived from the audited
+financial statements at that date. Certain information and footnote disclosures
+normally included in financial statements prepared in accordance with generally
+accepted accounting principles have been condensed or omitted pursuant to such
+SEC rules and regulations. Operating results for the quarter ended June 30, 1997
+are not necessarily indicative of the results that may be expected for the year
+ending December 31, 1997. These financial statements should be read in
+conjunction with the financial statements and the accompanying notes included in
+the Company's Registration Statement on Form S-1 (No. 333-23795), including the
+related Prospectus dated May 15, 1997 as filed with the SEC (the "Registration
+Statement"). Certain prior period balances have been reclassified to conform to
+current period presentation.
+
+Net Loss per Share
+
+Net loss per share is computed using the weighted average number of common and
+common equivalent shares outstanding during the period. Common equivalent shares
+consist of the incremental common shares issuable upon conversion of the
+convertible preferred stock and shares issuable upon the exercise of stock
+options using the treasury stock method. Common equivalent shares are excluded
+from the computation if their effect is antidilutive, except that, pursuant to
+the SEC Staff Accounting Bulletins, the convertible preferred stock and common
+equivalent shares (using the treasury stock method and the public offering
+price) issued during the 12 months previous to the initial public offering have
+been included in the computation through May 15, 1997, regardless of
+antidilutive effect, as if they were outstanding for all periods presented.
+
+The Financial Accounting Standards Board recently issued Statement No. 128,
+Earnings per Share, which requires the presentation of basic earnings per share
+(EPS) and, for companies with complex capital structures, diluted EPS. Statement
+No. 128 is effective for annual and interim periods ending after December 15,
+1997. The Company expects that for profitable periods, basic EPS will be higher
+than primary earnings per share as presented in the accompanying financial
+statements and diluted EPS will not differ materially from earnings per share as
+presented in the accompanying financial statements. Computations for loss
+periods should not change significantly.
+
+NOTE 2 - INVESTMENTS
+
+The Company invests certain of its excess cash in debt instruments of the U.S.
+government and its agencies, and of high quality corporate issuers. All highly
+liquid instruments with an original maturity of three months or less are
+considered cash equivalents; those with original maturities greater than three
+months are considered short-term investments and those with maturities greater
+than twelve months from the balance sheet date are considered long-term
+investments. The Company classifies investment securities in accordance with
+Statement of Financial Accounting Standards No. 115, "Accounting for Certain
+Investments in Debt and Equity Securities."
+
+At June 30, 1997, short-term investments consist primarily of U.S. Treasury
+Securities and Foreign Government Securities and were classified as
+held-to-maturity. At December 31, 1996, the Company did not hold any short-term
+investments. Unrealized holding gains and losses at June 30, 1997 were not
+significant.
+
+
+                                     Page 6
+
+
+<PAGE>   7
+
+
+
+NOTE 3 - EQUIPMENT
+
+Equipment, at cost, consisted of the following components (in thousands):
+
+
+<TABLE>
+<CAPTION>
+                                                               June 30,                  Dec. 31,
+                                                                 1997                      1996
+                                                            ----------------          ----------------
+                    <S>                                      <C>                       <C>      
+                    Computers and equipment                   $   2,813                 $   1,031
+                    Purchased software                            1,221                       134
+                    Leasehold improvements                          500                       130
+                    Leased equipment                                362                         -
+                                                            ----------------          ----------------
+                                                                  4,896                     1,295
+                    Less accumulated depreciation and
+                    amortization                                  1,332                       310
+                                                            ----------------          ----------------
+                                                              $   3,564                 $     985
+                                                            ================          ================
+</TABLE>
+
+
+NOTE 4 - STOCKHOLDERS' EQUITY
+
+On May 15, 1997, the Company completed its initial public offering of 3,000,000
+shares of its common stock. Net proceeds to the Company aggregated $49,103,000.
+As of the closing date of the offering, all of the convertible preferred stock
+outstanding was converted into an aggregate of 3,446,376 shares of common stock.
+
+NOTE 5 - CONTINGENCY
+
+On May 12, 1997, Barnes & Noble, Inc. ("B&N") filed suit against the Company in
+the United States District Court for the Southern District of New York. The suit
+alleges one count of false and misleading advertising in violation of the Lanham
+Act. Specifically, B&N alleges that: (1) the Company's use of the phrase
+"Earth's Biggest Bookstore" is false and misleading; (2) the Company's claim to
+provide access to 2.5 million titles is false and misleading; and (3) the
+Company's claim to provide access to more titles than B&N is false and
+misleading. The complaint seeks compensatory and punitive damages, as well as
+injunctive and other equitable relief. The Company filed its answer on July 11,
+1997, in which it denies B&N's claims. The Company believes that B&N's claims
+are without merit and intends to defend against the lawsuit vigorously.
+
+ITEM 2.           MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION 
+                  AND RESULTS OF OPERATIONS
+
+The following Management's Discussion and Analysis of Financial Condition and
+Results of Operations contains forward-looking statements based on management's
+current expectations, estimates and projections about the Company's industry,
+management's beliefs and certain assumptions made by management. All statements,
+trends, analyses and other information contained in this report relative to
+trends in net sales, gross margin and anticipated expense levels, as well as
+other statements, including words such as "anticipate," "believe," "plan,"
+"estimate," "expect" and "intend" and other similar expressions, constitute
+forward-looking statements. These forward-looking statements involve risks and
+uncertainties, and actual results may differ materially from those anticipated
+or expressed in such statements. Potential risks and uncertainties include,
+among others, those set forth under "Overview" and "Additional Factors That May
+Affect Future Results" included in this Management's Discussion and Analysis of
+Financial Condition and Results of Operations and in the "Risk Factors" section
+of the Company's final prospectus dated May 15, 1997, as filed with the SEC.
+Particular attention should be paid to the cautionary statements involving the
+Company's limited operating history, the unpredictability of its future
+revenues, the unpredictable and evolving nature of its business model, the
+increasingly competitive online commerce environment and the risks associated
+with capacity constraints, systems development and management of growth. Except
+as required by law, the Company undertakes no obligation to update any
+forward-looking statement, whether as a result of new information, future events
+or otherwise. Readers, however, should carefully review the factors set forth in
+other reports or documents that the Company files from time to time with the
+SEC.
+
+OVERVIEW
+
+Amazon.com is the leading online retailer of books. The Company also sells a
+smaller number of CDs, videotapes and audiotapes. All of these products are sold
+through the Company's Web site. The Company was incorporated in July 1994 and
+commenced offering products for sale on its Web site in July 1995. Accordingly,
+the Company has a limited operating 
+
+
+                                     Page 7
+
+
+<PAGE>   8
+
+
+history on which to base an evaluation of its business and prospects. The
+Company's prospects must be considered in light of the risks, expenses and
+difficulties frequently encountered by companies in their early stage of
+development, particularly companies in new and rapidly evolving markets such as
+online commerce. Such risks for the Company include, but are not limited to, an
+evolving and unpredictable business model and the management of growth. To
+address these risks, the Company must, among other things, maintain and increase
+its customer base, implement and successfully execute its business and marketing
+strategy, continue to develop and upgrade its technology and
+transaction-processing systems, improve its Web site, provide superior customer
+service and order fulfillment, respond to competitive developments, and attract,
+retain and motivate qualified personnel. There can be no assurance that the
+Company will be successful in addressing such risks, and the failure to do so
+could have a material adverse effect on the Company's business, prospects,
+financial condition and results of operations.
+
+Since inception, the Company has incurred significant losses, and as of June 30,
+1997 had an accumulated deficit of $15.8 million. The Company believes that its
+success will depend in large part on its ability to (i) extend its brand
+position, (ii) provide its customers with outstanding value and a superior
+shopping experience, and (iii) achieve sufficient sales volume to realize
+economies of scale. Accordingly, the Company intends to continue to invest
+heavily in marketing and promotion (including its recent relationships with
+Yahoo! Inc. ("Yahoo!"), Excite, Inc. ("Excite") and America Online, Inc. ("AOL")
+as discussed below), site development and technology and operating
+infrastructure development. The Company also offers attractive pricing programs,
+which have reduced its gross margins. Because the Company has relatively low
+product gross margins, achieving profitability given planned investment levels
+depends upon the Company's ability to generate and sustain substantially
+increased revenue levels. As a result, the Company believes that it will
+continue to incur substantial operating losses for the foreseeable future, and
+that the rate at which such losses will be incurred will increase significantly
+from current levels. Although the Company has experienced significant revenue
+growth in recent periods, such growth rates are not sustainable and will
+decrease in the future. In view of the rapidly evolving nature of the Company's
+business and its limited operating history, the Company believes that
+period-to-period comparisons of its operating results, including the Company's
+gross profit and operating expenses as a percentage of net sales, are not
+necessarily meaningful and should not be relied upon as an indication of future
+performance.
+
+As a result of the Company's limited operating history and the emerging nature
+of the markets in which it competes, the Company is unable to accurately
+forecast its revenues. The Company's current and future expense levels are based
+largely on its investment plans and estimates of future revenues and are to a
+large extent fixed. Sales and operating results generally depend on the volume
+of, timing of and ability to fulfill orders received, which are difficult to
+forecast. The Company may be unable to adjust spending in a timely manner to
+compensate for any unexpected revenue shortfall. Accordingly, any significant
+shortfall in revenues in relation to the Company's planned expenditures would
+have an immediate adverse effect on the Company's business, prospects, financial
+condition and results of operations. Further, as a strategic response to changes
+in the competitive environment, the Company may from time to time make certain
+pricing, service, marketing or acquisition decisions that could have a material
+adverse effect on its business, prospects, financial condition and results of
+operations. For example, the Company has agreed in each of its arrangements with
+Yahoo!, Excite and AOL to make significant fixed payments. There can be no
+assurance that these arrangements will generate adequate revenues to cover the
+associated expenditures, and any significant shortfall would have a material
+adverse effect on the Company's financial condition and results of operations.
+
+The Company expects to experience significant fluctuations in its future
+quarterly operating results due to a variety of factors, many of which are
+outside the Company's control. Factors that may adversely affect the Company's
+quarterly operating results include (i) the Company's ability to retain existing
+customers, attract new customers at a steady rate and maintain customer
+satisfaction, (ii) the Company's ability to manage inventory and fulfillment
+operations and maintain gross margins, (iii) the announcement or introduction of
+new sites, services and products by the Company and its competitors, (iv) price
+competition or higher wholesale prices in the industry, (v) the level of use of
+the Internet and online services and increasing consumer acceptance of the
+Internet and other online services for the purchase of consumer products such as
+those offered by the Company, (vi) the Company's ability to upgrade and develop
+its systems and infrastructure and attract new personnel in a timely and
+effective manner, (vii) the level of traffic on the Company's Web site, (viii)
+technical difficulties, system downtime or Internet brownouts, (ix) the amount
+and timing of operating costs and capital expenditures relating to expansion of
+the Company's business, operations and infrastructure, (x) the number of popular
+books introduced during the period, (xi) the level of merchandise returns
+experienced by the Company, (xii) governmental regulation, and (xiii) general
+economic conditions and economic conditions specific to the Internet, online
+commerce and the book industry.
+
+The Company expects that it will experience seasonality in its business,
+reflecting a combination of seasonal fluctuations in Internet usage and
+traditional retail seasonality patterns. Internet usage and the rate of Internet
+growth may be expected to decline during the summer. Further, sales in the
+traditional retail book industry are significantly higher in the fourth calendar
+quarter of each year than in the preceding three quarters.
+
+
+                                     Page 8
+
+
+<PAGE>   9
+
+
+Due to the foregoing factors, in one or more future quarters the Company's
+operating results may fall below the expectations of securities analysts and
+investors. In such event, the trading price of the common stock would likely be
+materially adversely affected.
+
+The Company has recorded aggregate deferred compensation of approximately $3.3
+million. The amount recorded represents the difference between the grant price
+and the deemed fair value of the Company's common stock for shares subject to
+options granted in 1996 and 1997. Deferred compensation is amortized over the
+vesting period of the options, which is typically five years. Amortization for
+the quarter and six months ended June 30, 1997 was $362,000 and $625,000,
+respectively.
+
+RECENT EVENTS
+
+In June 1997, the Company entered into multiyear, multimillion dollar
+advertising agreements with three Internet aggregators, Yahoo!, Excite and AOL.
+These agreements provide the Company with a broad bookselling promotional
+presence on each aggregator's Internet service. Each of the agreements provides
+for fixed payments as well as performance incentive payments. The Company
+anticipates that it will not recognize sales revenues from these agreements
+until the fourth quarter of 1997, but expects to recognize marketing and sales
+expenses in earlier quarters, including $1.8 million in the quarter ended June
+30, 1997. Although the Company anticipates that the promotional placements
+resulting from these arrangements will increase its brand awareness, its
+customer base and accordingly its sales levels, the Company has agreed, in each
+case, to make significant fixed payments over the course of the contracts. There
+can be no assurance that these arrangements will generate adequate revenues to
+cover the associated expenditures, and any significant shortfall would have a
+material adverse effect on the Company's financial condition and results of
+operations.
+
+RESULTS OF OPERATIONS
+
+
+NET SALES
+
+
+<TABLE>
+<CAPTION>
+                                                             Quarter Ended                       Six Months Ended
+
+ (in thousands)                                        June 30,           June 30,          June 30,          June 30,
+                                                         1997               1996              1997              1996
+- ---------------------------------------------------------------------------------------------------------------------------
+<S>                                                   <C>                <C>               <C>              <C>      
+Net sales                                             $ 27,855           $  2,230          $ 43,860         $   3,105
+- ---------------------------------------------------------------------------------------------------------------------------
+</TABLE>
+
+Net sales are comprised of the selling price of books and other merchandise sold
+by the Company, net of returns, as well as outbound shipping and handling
+charges. Growth in net sales reflects a significant increase in units sold due
+to the significant growth of the Company's customer base and repeat purchases
+from the Company's existing customers. International sales represented 28% and
+37% of net sales for the quarters ended June 30, 1997 and 1996, respectively,
+and 28% and 38% of net sales for the six months ended June 30, 1997 and 1996,
+respectively.
+
+GROSS PROFIT
+
+<TABLE>
+<CAPTION>
+                                                             Quarter Ended                       Six Months Ended
+
+ (in thousands)                                        June 30,           June 30,          June 30,          June 30,
+                                                         1997               1996              1997              1996
+- ---------------------------------------------------------------------------------------------------------------------------
+
+<S>                                                   <C>                <C>               <C>              <C>      
+Gross profit                                          $  5,222           $    477          $  8,743         $     657
+
+Gross margin                                            18.7%               21.4%             19.9%             21.2%
+- ---------------------------------------------------------------------------------------------------------------------------
+</TABLE>
+
+Gross profit equals sales less cost of sales, which consists of the cost of
+merchandise sold to customers and outbound and inbound shipping costs. Gross
+profit increased in absolute dollars reflecting the Company's increased sales
+volume. The Company's gross margin decreased due to a combination of lower
+prices and lower overall shipping margins, partially offset by improvements in
+purchasing.
+
+The Company believes that offering its customers attractive prices is an
+essential component of its business strategy. Accordingly, the Company offers
+discounts on a broad selection of books. During April and May 1997, the Company
+offered discounts of 40% on titles on the Amazon.com 500 and other focus lists.
+In June 1997, the Company extended its discounts to include 20% and 30%
+discounts on over 400,000 titles, with fewer titles discounted at 40%. The
+Company may in the future expand or increase the discounts it offers to its
+customers and may otherwise alter its pricing structure and policies. The
+Company anticipates that its June pricing change will reduce gross margins in
+upcoming quarters below those experienced in the quarter ended June 30, 1997.
+
+
+                                     Page 9
+
+
+<PAGE>   10
+
+
+MARKETING AND SALES
+
+<TABLE>
+<CAPTION>
+                                                            Quarter Ended                        Six Months Ended
+
+ (in thousands)                                        June 30,           June 30,          June 30,          June 30,
+                                                         1997               1996              1997              1996
+- ---------------------------------------------------------------------------------------------------------------------------
+
+<S>                                                   <C>                <C>                <C>              <C>     
+Marketing and sales                                   $  7,773           $    696           $11,679          $    901
+
+Percentage of net sales                                  27.9%              31.2%             26.6%             29.0%
+- ---------------------------------------------------------------------------------------------------------------------------
+</TABLE>
+
+Marketing and sales expenses consist primarily of advertising, public relations
+and promotional expenditures, as well as payroll and related expenses for
+personnel engaged in marketing, selling and fulfillment activities. Marketing
+and sales expenses increased primarily due to increases in the Company's
+promotional expenditures, including $1.8 million associated with the Yahoo!,
+Excite and AOL relationships (see "Recent Events"), and increased personnel and
+related expenses required to implement the Company's marketing strategy and
+fulfill customer demand. The Company intends to continue to pursue its
+aggressive branding and marketing campaign and expects its costs of fulfillment
+to increase based on anticipated sales growth. Therefore, the Company expects
+marketing and sales expenses to increase significantly in absolute dollars.
+
+PRODUCT DEVELOPMENT
+
+<TABLE>
+<CAPTION>
+                                                             Quarter Ended                       Six Months Ended
+
+(in thousands)                                         June 30,           June 30,          June 30,          June 30,
+                                                         1997               1996              1997              1996
+- ---------------------------------------------------------------------------------------------------------------------------
+
+<S>                                                   <C>                <C>               <C>              <C>      
+Product development                                   $  2,808           $    394          $  4,383         $     657
+
+Percentage of net sales                                  10.1%              17.7%             10.0%             21.2%
+- ---------------------------------------------------------------------------------------------------------------------------
+</TABLE>
+
+Product development expenses consist principally of payroll and related expenses
+for development, editorial and network operations personnel and consultants,
+systems and telecommunications infrastructure and costs of acquired content. The
+increases in product development expenses were primarily attributable to
+increased staffing and associated costs relating to enhancing the features,
+content and functionality of the Company's Web site and transaction-processing
+systems, as well as increased investment in systems and telecommunications
+infrastructure. Such expenses decreased significantly as a percentage of net
+sales due to the significant increase in net sales. To date, all product
+development costs have been expensed as incurred. The Company believes that
+continued investment in product development is critical to attaining its
+strategic objectives and, as a result, expects product development expenses to
+increase significantly in absolute dollars.
+
+
+GENERAL AND ADMINISTRATIVE
+
+<TABLE>
+<CAPTION>
+                                                             Quarter Ended                       Six Months Ended
+
+ (in thousands)                                        June 30,           June 30,          June 30,          June 30,
+                                                         1997               1996              1997              1996
+- ---------------------------------------------------------------------------------------------------------------------------
+
+<S>                                                   <C>                <C>               <C>              <C>      
+General and administrative                            $  1,708           $    163          $  2,850         $     211
+
+Percentage of net sales                                   6.1%               7.3%              6.5%              6.8%
+- ---------------------------------------------------------------------------------------------------------------------------
+</TABLE>
+
+General and administrative expenses consist of payroll and related expenses for
+executive, accounting and administrative personnel, recruiting, professional
+fees and other general corporate expenses. The increase in general and
+administrative expenses was primarily due to increased salaries and related
+expenses associated with the hiring of additional personnel, costs attributable
+to being a public company, and increases in professional fees and travel. The
+Company expects general and administrative expenses to increase in absolute
+dollars as the Company expands its staff and incurs additional costs related to
+the growth of its business and being a public company.
+
+
+                                    Page 10
+
+
+<PAGE>   11
+
+
+INTEREST INCOME
+
+<TABLE>
+<CAPTION>
+                                                             Quarter Ended                       Six Months Ended
+
+ (in thousands)                                        June 30,           June 30,          June 30,          June 30,
+                                                         1997               1996              1997              1996
+- ---------------------------------------------------------------------------------------------------------------------------
+
+<S>                                                   <C>                <C>               <C>              <C>      
+Interest income                                       $    362           $      9          $    426         $      14
+
+Percentage of net sales                                   1.3%               0.4%              1.0%              0.5%
+- ---------------------------------------------------------------------------------------------------------------------------
+</TABLE>
+
+Interest income on cash, cash equivalents and short-term investments increased
+due to higher cash, cash equivalents and short-term investment balances
+resulting from the Company's financing activities, including the issuance of
+preferred stock in June 1996 and the completion of the Company's initial public
+offering of common stock in May 1997.
+
+INCOME TAXES
+
+The Company has not generated any net income to date and therefore has not paid
+any federal income taxes since inception. Utilization of the Company's net
+operating loss carryforwards may be subject to certain limitations under Section
+382 of the Internal Revenue Code. The Company has provided a full valuation
+allowance on the deferred tax asset, consisting primarily of net operating loss
+carryforwards, because of uncertainty regarding its realizability.
+
+LIQUIDITY AND CAPITAL RESOURCES
+
+At June 30, 1997 the Company's cash and cash equivalents were $47.7 million,
+compared to $6.2 million at December 31, 1996. On May 15, 1997, the Company
+completed an initial public offering of 3,000,000 shares of common stock at a
+price of $18.00 per share. The net proceeds to the Company from the offering
+were approximately $49.1 million.
+
+Net cash provided by operating activities of $2.6 million for the six months
+ended June 30, 1997 was attributable to increases of $7.5 million in accounts
+payable and $5.3 million in accrued advertising and other accrued expenses plus
+$1.6 million in depreciation and amortization, largely offset by a net loss of
+$9.7 million and increases of $1.1 million in inventories, $841,000 in prepaid
+expenses and $182,000 in deposits. For the six months ended June 30, 1996, cash
+used in operating activities of $257,000 resulted from a net loss of $1.1
+million and increases in inventories and deposits, largely offset by increases
+in accounts payable and accrued advertising and other accrued expenses, as well
+as depreciation and amortization. Net cash used in investing activities was
+$10.9 million for the six months ended June 30, 1997, and consisted of purchases
+of short-term investments of $8.7 million and purchases of equipment of $2.2
+million. Cash used in investing activities of $235,000 for the six months ended
+June 30, 1996 was attributable to purchases of equipment. The large increases in
+the components of working capital on a period-to-period basis are a direct
+result of the rapid growth of the Company's revenues and related activities.
+Such growth has required the Company to purchase additional equipment and
+software and increase purchases of products, which resulted in corresponding
+increases in inventories and accounts payable.
+
+Cash flows provided by financing activities of $49.8 million for the six months
+ended June 30, 1997 consisted of net proceeds of approximately $49.1 million
+from the initial public offering, $474,000 from the exercise of common stock
+options and $200,000 from the issuance of preferred stock. Cash flows of $8.0
+million attributable to financing activities for the six months ended June 30,
+1996 consisted primarily of net proceeds from the issuance of preferred stock.
+
+As of June 30, 1997 the Company's principal sources of liquidity consisted of
+$47.7 million of cash and cash equivalents and $8.7 million of short-term
+investments. As of that date, the Company's principal commitments consisted of
+obligations outstanding under operating leases and commitments for advertising
+arrangements. Although the Company has no material commitments for capital
+expenditures, it anticipates a substantial increase in its capital expenditures
+and lease commitments consistent with anticipated growth in operations,
+infrastructure and personnel. The Company expects to establish one or more
+additional warehouse locations within the next six months, which will require it
+to commit to additional lease obligations and stock inventories, and to purchase
+equipment and install leasehold improvements. In the future, the Company may
+support a larger merchandise inventory in order to provide better availability
+to customers and achieve purchasing efficiencies.
+
+The Company believes that current cash and cash equivalent balances and
+short-term investments will be sufficient to meet its anticipated cash needs for
+at least 12 months. However, any projection of future cash needs and cash flows
+is subject to substantial uncertainty. If cash generated from operations is
+insufficient to satisfy the Company's liquidity requirements, the Company may
+seek to sell additional equity or debt securities or to obtain a credit
+facility. The sale of additional equity or convertible debt securities could
+result in additional dilution to the Company's stockholders. There can be no
+assurance that financing will be available in amounts or on terms acceptable to
+the Company, if at all. In 
+
+
+                                    Page 11
+
+
+<PAGE>   12
+
+
+addition, the Company will, from time to time, consider the acquisition of or
+investment in complementary businesses, products and technologies, which might
+increase the Company's liquidity requirements or cause the Company to issue
+additional equity or debt securities.
+
+ADDITIONAL FACTORS THAT MAY AFFECT FUTURE RESULTS
+
+In addition to the factors discussed in the "Overview" section of this
+Management's Discussion and Analysis of Financial Condition and Results of
+Operations and the Company's final prospectus dated May 15, 1997, as filed with
+the SEC, including, among others, the Company's limited operating history, the
+unpredictability of its future revenues and the unpredictable and evolving
+nature of its business model, the following additional factors may affect the
+Company's future results.
+
+The online commerce market, particularly over the Internet, is new, rapidly
+evolving and intensely competitive, which competition the Company expects will
+intensify in the future. In addition, the retail book industry is intensely
+competitive. The Company's current or potential competitors include (i) various
+online booksellers and vendors of other information-based products such as CDs
+and videotapes, including entrants into narrow specialty niches that may be
+aided by partnering with existing distributors that help establish and operate
+online sites for booksellers, (ii) a number of indirect competitors that
+specialize in online commerce or derive a substantial portion of their revenues
+from online commerce, through which bookstores other than the Company may offer
+products, and (iii) publishers and retail vendors of books, music and
+videotapes, including large specialty booksellers, with significant brand
+awareness, sales volume and customer bases. Many of these competitors have
+longer operating histories, larger customer bases, greater brand recognition and
+significantly greater financial, marketing and other resources than the Company.
+In addition, new technologies and the expansion of existing technologies may
+increase the competitive pressures on the Company. Competitive pressures created
+by any one of the Company's competitors, or by the Company's competitors
+collectively, could have a material adverse effect on the Company's business,
+prospects, financial condition and results of operations.
+
+The Company's revenues depend on the number of visitors who shop on its Web site
+and the volume of orders it fulfills. Any system interruptions that result in
+the unavailability of the Company's Web site or reduced order fulfillment
+performance would reduce the volume of goods sold and the attractiveness of the
+Company's product and service offerings. The Company has experienced periodic
+system interruptions, which it believes will continue to occur from time to
+time. The Company uses an internally developed system for its Web site, search
+engine and substantially all aspects of transaction processing, including order
+management, cash and credit card processing, purchasing, inventory management
+and shipping. The Company will be required to add additional software and
+hardware and further develop and upgrade its existing technology,
+transaction-processing systems and network infrastructure to accommodate
+increased traffic on its Web site and increased sales volume through its
+transaction-processing systems. Any inability to do so may cause unanticipated
+system disruptions, slower response times, degradation in levels of customer
+service, impaired quality and speed of order fulfillment, or delays in reporting
+accurate financial information. There can be no assurance that the Company will
+be able to accurately project the rate or timing of increases, if any, in the
+use of its Web site or in a timely manner to effectively upgrade and expand its
+transaction-processing systems or to integrate smoothly any newly developed or
+purchased modules with its existing systems. Any inability to do so would have a
+material adverse effect on the Company's business, prospects, financial
+condition and results of operations. Substantially all of the Company's computer
+and communications hardware is located at a single leased facility in Seattle,
+Washington. The Company's systems and operations are vulnerable to damage or
+interruption from fire, flood, power loss, telecommunications failure,
+break-ins, earthquake and similar events. The Company does not presently have
+redundant systems or a formal disaster recovery plan and does not carry
+sufficient business interruption insurance to compensate it for losses that may
+occur. Despite the implementation of network security measures by the Company,
+its servers are vulnerable to computer viruses, physical or electronic break-ins
+and similar disruptions, which could lead to interruptions, delays, loss of data
+or the inability to accept and fulfill customer orders. The occurrence of any of
+the foregoing events could have a material adverse effect on the Company's
+business, prospects, financial condition and results of operations.
+
+The Company has rapidly and significantly expanded its operations, and
+anticipates that further significant expansion will be required to address
+potential growth in its customer base and market opportunities. This expansion
+has placed, and is expected to continue to place, a significant strain on the
+Company's management, operational and financial resources. To manage the
+expected growth of its operations and personnel, the Company will be required to
+improve existing and implement new transaction-processing, operational and
+financial systems, procedures and controls, and to expand, train and manage its
+growing employee base. There can be no assurance that the Company's current and
+planned personnel, systems, procedures and controls will be adequate to support
+the Company's future operations, that management will be able to hire, train,
+retain, motivate and manage required personnel or that Company management will
+be able to successfully identify, manage and exploit existing and potential
+market opportunities. If the Company is unable to manage growth effectively, its
+business, prospects, financial condition and results of operations will be
+materially adversely affected.
+
+
+                                    Page 12
+
+
+<PAGE>   13
+
+
+PART II - OTHER INFORMATION
+
+
+
+ITEM 1.           LEGAL PROCEEDINGS
+
+                  On May 12, 1997, B&N filed suit against the Company in the
+                  United States District Court for the Southern District of New
+                  York. The suit alleges one count of false and misleading
+                  advertising in violation of the Lanham Act. Specifically, B&N
+                  alleges that: (1) the Company's use of the phrase "Earth's
+                  Biggest Bookstore" is false and misleading; (2) the Company's
+                  claim to provide access to 2.5 million titles is false and
+                  misleading; and (3) the Company's claim to provide access to
+                  more titles than B&N is false and misleading. The complaint
+                  seeks compensatory and punitive damages, as well as injunctive
+                  and other equitable relief. The Company filed its answer on
+                  July 11, 1997, in which it denies B&N's claims. The Company
+                  believes that B&N's claims are without merit and intends to
+                  defend against the lawsuit vigorously.
+
+ITEM 2.           CHANGES IN SECURITIES
+
+                  None
+
+
+ITEM 3.           DEFAULTS UPON SENIOR SECURITIES
+
+                  None
+
+
+ITEM 4.           SUBMISSION OF MATTERS TO A VOTE OF SECURITY HOLDERS
+
+                  None
+
+
+ITEM 5.           OTHER INFORMATION
+
+                  None
+
+
+ITEM 6.           EXHIBITS AND REPORTS ON FORM 8-K
+
+                  (a)  Exhibits
+
+                           11. Statement Regarding Computation of Loss Per Share
+
+                           27. Financial Data Schedule
+
+                  (b)  Reports on Form 8-K
+
+                           None
+
+
+                                    Page 13
+
+
+<PAGE>   14
+
+
+                                   SIGNATURES
+
+
+Pursuant to the requirements of Section 13 or 15(d) of the Securities Exchange
+Act of 1934, the Registrant has duly caused this report to be signed on its
+behalf by the undersigned, thereunto duly authorized.
+
+
+
+                                                    AMAZON.COM, INC.
+                                                      (REGISTRANT)
+DATED:   August 14, 1997
+
+
+
+
+                                                  By://S//Joy D. Covey
+                                                       Joy D. Covey
+                                                  Chief Financial Officer
+                                                      Vice President
+                                                Finance and Administration
+                                                  Treasurer and Secretary
+
+
+                                    Page 14
+
+
+<PAGE>   15
+
+
+                                  EXHIBIT INDEX
+
+
+
+<TABLE>
+<CAPTION>
+Exhibit Number                                         Title
+- --------------      ---------------------------------------------------
+
+         <S>        <C>                                                         
+         11         Statement Regarding Computation of Loss per Share
+         27         Financial Data Schedule
+</TABLE>
+
+
+                                    Page 15
+
+
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>EX-11
+<SEQUENCE>2
+<DESCRIPTION>STATEMENT REGARDING COMPUTATION OF LOSS PER SHARE
+<TEXT>
+
+<PAGE>   1
+
+
+                                   EXHIBIT 11
+
+                                AMAZON.COM, INC.
+
+                          COMPUTATION OF LOSS PER SHARE
+
+
+
+Loss per share reported in Form 10-Q for the quarters ended June 30, 1997 and
+1996 are based on the following (in thousands, except per share data):
+
+
+<TABLE>
+<CAPTION>
+
+- ------------------------------------------------------------------------------------------------------------------------------
+                                                                Quarter Ended                        Six Months Ended
+                                                      -----------------------------------    ---------------------------------
+                                                           June 30,         June 30,             June 30,       June 30,
+                                                             1997             1996                 1997           1996
+- ------------------------------------------------------------------------------------------------------------------------------
+<S>                                                      <C>               <C>                  <C>             <C>       
+Net Loss                                                 $  (6,705)        $    (767)           $  (9,743)      $  (1,098)
+                                                      ===================================    =================================
+
+Weighted average number of common shares used
+     in computation                                         20,719            15,348               18,774          15,035
+
+Net effect of stock options exercised and granted,
+     and preferred stock issued during the 12-month          
+     period prior to the Company's filing of its
+     initial public offering at less than the
+     offering price, calculated using the treasury
+     stock method at the offering price of $18 per
+     share, and treated as outstanding for all
+     periods presented prior to and through May 15,
+     1997                                                    2,927             7,083                4,558           7,306
+                                                      -----------------------------------    ---------------------------------
+
+                   Total Shares                             23,646            22,431               23,332          22,341
+                                                      ===================================    =================================
+Net Loss per Share                                        $  (0.28)         $  (0.03)            $  (0.42)       $  (0.05)
+                                                      ===================================    =================================
+</TABLE>
+
+
+                                    Page 16
+
+
+
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>EX-27
+<SEQUENCE>3
+<DESCRIPTION>FINANCIAL DATA SCHEDULE
+<TEXT>
+
+<TABLE> <S> <C>
+
+<ARTICLE> 5
+<LEGEND>
+THIS SCHEDULE CONTAINS SUMMARY FINANCIAL INFORMATION EXTRACTED FROM THE
+AMAZON.COM INC. FORM 10-Q FOR THE PERIOD ENDED JUNE 30, 1997 AND IS QUALIFIED IN
+ITS ENTIRETY BY REFERENCE TO SUCH FINANCIAL STATEMENTS.
+</LEGEND>
+<MULTIPLIER> 1,000
+       
+<S>                             <C>
+<PERIOD-TYPE>                   6-MOS
+<FISCAL-YEAR-END>                          DEC-31-1997
+<PERIOD-START>                             JAN-01-1997
+<PERIOD-END>                               JUN-30-1997
+<CASH>                                          47,700
+<SECURITIES>                                     8,692
+<RECEIVABLES>                                        0
+<ALLOWANCES>                                         0
+<INVENTORY>                                      1,652
+<CURRENT-ASSETS>                                59,206
+<PP&E>                                           4,896
+<DEPRECIATION>                                   1,332
+<TOTAL-ASSETS>                                  63,098
+<CURRENT-LIABILITIES>                           17,357
+<BONDS>                                              0
+<PREFERRED-MANDATORY>                                0
+<PREFERRED>                                          0
+<COMMON>                                           238
+<OTHER-SE>                                      61,090
+<TOTAL-LIABILITY-AND-EQUITY>                    63,098
+<SALES>                                         43,860
+<TOTAL-REVENUES>                                43,860
+<CGS>                                           35,117
+<TOTAL-COSTS>                                   35,117
+<OTHER-EXPENSES>                                18,912
+<LOSS-PROVISION>                                     0
+<INTEREST-EXPENSE>                                   0
+<INCOME-PRETAX>                                (9,743)
+<INCOME-TAX>                                         0
+<INCOME-CONTINUING>                            (9,743)
+<DISCONTINUED>                                       0
+<EXTRAORDINARY>                                      0
+<CHANGES>                                            0
+<NET-INCOME>                                   (9,743)
+<EPS-PRIMARY>                                   (0.42)
+<EPS-DILUTED>                                   (0.42)
+        
+
+</TABLE>
+</TEXT>
+</DOCUMENT>
+</SEC-DOCUMENT>
+-----END PRIVACY-ENHANCED MESSAGE-----
