@@ -26,3 +26,4 @@ data/db/*.db
 .idea/
 .vscode/
 *.swp
+sec-edgar-filings/
