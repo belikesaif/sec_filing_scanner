@@ -1,6 +1,6 @@
 # SEC Filing Scanner
 
-This project monitors and downloads SEC filings (10-K and 10-Q) for specified stock tickers using the sec-edgar-downloader package. It exposes a FastAPI API to report the scanner status.
+This project monitors and downloads SEC filings (10-K and 10-Q) for specified stock tickers using the sec-edgar-downloader package. It processes the filings to extract key financial metrics, stores them in SQLite, generates embeddings for semantic search, and provides a Streamlit UI for analysis and AI-powered chat.
 
 ## Milestone 1: SEC Raw Data Collection
 

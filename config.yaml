@@ -1,0 +1,88 @@
+# SEC Filing Scanner Configuration
+
+# Scheduler Configuration
+scheduler:
+  # Polling frequency in seconds (e.g., every 3600 seconds = 1 hour)
+  polling_interval: 3600
+  # Enable/disable the scheduler
+  enabled: true
+
+# Downloader Configuration
+downloader:
+  # List of stock tickers to monitor
+  tickers:
+    - AAPL
+    - MSFT
+    - GOOG
+    - AMZN
+    - META
+  # Filing types to monitor
+  filing_types:
+    - 10-K
+    - 10-Q
+  # Email address for SEC EDGAR Downloader (required by sec-edgar-downloader)
+  sec_email: "mohsinmahmood675@gmail.com"
+  # Number of retries for failed downloads
+  max_retries: 3
+  # Delay between retries in seconds
+  retry_delay: 60
+
+# Extractor/Processor Configuration
+extractor:
+  # Maximum text length to process
+  max_text_length: 8000
+  # Metric mappings for financial data extraction
+  metric_mappings:
+    revenue:
+      - revenue
+      - net revenue
+      - total revenue
+      - sales
+      - net sales
+    net_income:
+      - net income
+      - net earnings
+      - net profit
+      - net loss
+    total_assets:
+      - total assets
+      - assets total
+    total_liabilities:
+      - total liabilities
+      - liabilities total
+    shareholders_equity:
+      - shareholders equity
+      - stockholders' equity
+      - total equity
+
+# Database Configuration
+database:
+  # SQLite database path (relative to project root)
+  sqlite_path: "data/db/sec_filings.db"
+
+# Embedding Configuration
+embedding:
+  # Model name for sentence transformer
+  model_name: "all-MiniLM-L6-v2"
+  # ChromaDB persistence directory (relative to project root)
+  persistence_dir: "embeddings/chromadb"
+
+# Streamlit Configuration
+streamlit:
+  # Port for Streamlit app
+  port: 8501
+  # Theme configuration
+  theme:
+    primaryColor: "#1E88E5"
+    backgroundColor: "#FFFFFF"
+    secondaryBackgroundColor: "#F0F2F6"
+    textColor: "#262730"
+
+# Logging Configuration
+logging:
+  # Log level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+  level: "INFO"
+  # Enable JSON structured logging
+  json_format: true
+  # Log file path (relative to project root)
+  file_path: "logs/sec_scanner.log"

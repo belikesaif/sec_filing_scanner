@@ -1,4 +1,5 @@
 import os
+from typing import List, Dict
 from sentence_transformers import SentenceTransformer
 import chromadb
 from app.utils.logger import setup_logger
@@ -77,3 +78,88 @@ class EmbeddingService:
             
         except Exception as e:
             logger.error(f"Error storing embedding for filing {filing_id}: {e}", exc_info=True)
+
+    def _split_text(self, text: str, max_length: int = 1000) -> List[str]:
+        """Split text into chunks of approximately max_length characters."""
+        words = text.split()
+        chunks = []
+        current_chunk = []
+        current_length = 0
+        
+        for word in words:
+            word_length = len(word)
+            if current_length + word_length + 1 <= max_length:
+                current_chunk.append(word)
+                current_length += word_length + 1
+            else:
+                chunks.append(" ".join(current_chunk))
+                current_chunk = [word]
+                current_length = word_length
+                
+        if current_chunk:
+            chunks.append(" ".join(current_chunk))
+            
+        return chunks
+
+    def process_filing(self, filing_id: int, content: str) -> bool:
+        """Process and store embeddings for a filing document."""
+        try:
+            # Split content into manageable chunks
+            chunks = self._split_text(content)
+            if not chunks:
+                logger.warning(f"No content chunks generated for filing {filing_id}")
+                return False
+
+            # Generate embeddings for all chunks
+            embeddings = []
+            for chunk in chunks:
+                embedding = self.generate_embedding(chunk)
+                if not embedding:
+                    logger.error(f"Failed to generate embedding for a chunk in filing {filing_id}")
+                    return False
+                embeddings.append(embedding)
+
+            # Create document IDs for each chunk
+            doc_ids = [f"filing_{filing_id}_chunk_{i}" for i in range(len(chunks))]
+            metadatas = [{"filing_id": filing_id, "chunk_id": i, "total_chunks": len(chunks)} 
+                        for i in range(len(chunks))]
+
+            # Store embeddings with metadata
+            self.collection.add(
+                documents=chunks,
+                embeddings=embeddings,
+                ids=doc_ids,
+                metadatas=metadatas
+            )
+            
+            logger.info(f"Successfully processed embeddings for filing {filing_id} ({len(chunks)} chunks)")
+            return True
+            
+        except Exception as e:
+            logger.error(f"Error processing embeddings for filing {filing_id}: {e}", exc_info=True)
+            return False
+
+    def search(self, query: str, limit: int = 5) -> List[Dict]:
+        """Search for similar content in embeddings."""
+        try:
+            results = self.collection.query(
+                query_texts=[query],
+                n_results=limit
+            )
+            
+            return [
+                {
+                    "text": doc,
+                    "metadata": metadata,
+                    "distance": distance
+                }
+                for doc, metadata, distance in zip(
+                    results["documents"][0],
+                    results["metadatas"][0],
+                    results["distances"][0]
+                )
+            ]
+            
+        except Exception as e:
+            logger.error(f"Error searching embeddings: {e}")
+            return []

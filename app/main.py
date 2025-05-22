@@ -1,3 +1,9 @@
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
 import threading
 import time
 from fastapi import FastAPI
@@ -13,39 +19,27 @@ app = FastAPI(title="SEC Filing Scanner API", version="0.1")
 app.include_router(filings.router, prefix="/filings", tags=["filings"])
 app.include_router(chatbot.router, prefix="/chatbot", tags=["chatbot"])
 
-# Instantiate the SEC scanner (downloads filings continuously)
-scanner = SecFilingScanner()
+# Import required components
+from app.services.scheduler import FilingScheduler
+from app.api.endpoints import status
 
-# Instantiate the Processing Pipeline (processes and indexes downloaded filings)
-processing_pipeline = ProcessingPipeline()
+# Include API routes
+app.include_router(status.router, tags=["status"])
 
-def processing_scheduler():
-    """
-    Background task that periodically scans the 'sec-edgar-filings' directory for new filings.
-    For each new filing (identified by its unique file path), it calls process_and_store() to process,
-    extract data, store the filing in SQLite, and generate embeddings in ChromaDB.
-    """
-    while True:
-        logger.info("Processing scheduler running: scanning for new filings...")
-        processing_pipeline.process_all_new_filings()
-        # Wait 5 minutes before the next scan
-        time.sleep(3)
+# Instantiate the Filing Scheduler (handles both downloading and processing)
+filing_scheduler = FilingScheduler()
 
 @app.on_event("startup")
 async def startup_event():
-    logger.info("Application startup: starting SEC Filing Scanner")
-    scanner.start()
-    # Immediately process any existing files
-    processing_pipeline.process_all_new_filings()
-    # Launch the processing scheduler in a background thread for continuous checking
-    processing_thread = threading.Thread(target=processing_scheduler, daemon=True)
-    processing_thread.start()
+    logger.info("Application startup: starting SEC Filing Scheduler")
+    # Start the filing scheduler which handles both downloading and processing
+    filing_scheduler.start()
 
 
 @app.on_event("shutdown")
 async def shutdown_event():
-    logger.info("Application shutdown: stopping SEC Filing Scanner")
-    scanner.stop()
+    logger.info("Application shutdown: stopping SEC Filing Scheduler")
+    filing_scheduler.stop()
 
 @app.get("/")
 async def root():
