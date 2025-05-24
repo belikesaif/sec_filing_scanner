@@ -7,31 +7,34 @@ logger = setup_logger(__name__)
 
 class ChatbotService:
     def __init__(self, collection_name: str = "filings_embeddings"):
-        # Initialize the EmbeddingService to access our Chroma collection.
-        self.embedding_service = EmbeddingService()
-        self.collection = self.embedding_service.collection
-        
-        # Ensure the OpenAI API key is set (e.g., via environment variable)
-        openai_api_key = os.getenv("OPENAI_API_KEY")
-        if not openai_api_key:
-            logger.error("OPENAI_API_KEY is not set in the environment.")
-            raise ValueError("OPENAI_API_KEY is required")
-        openai.api_key = openai_api_key
-        
-        logger.info("Simple ChatbotService initialized successfully without LangChain.")
+        try:
+            # Ensure the OpenAI API key is set first
+            self.api_key = os.getenv("OPENAI_API_KEY")
+            if not self.api_key:
+                logger.error("OPENAI_API_KEY is not set in the environment.")
+                raise ValueError("OPENAI_API_KEY is required")
+            openai.api_key = self.api_key
+            
+            # Initialize the EmbeddingService to access our Chroma collection
+            self.embedding_service = EmbeddingService()
+            self.collection = self.embedding_service.collection
+            logger.info("ChatbotService initialized successfully")
+        except Exception as e:
+            logger.error(f"Error initializing ChatbotService: {e}")
+            raise
 
+        logger.info("Simple ChatbotService initialized successfully without LangChain.")
+        
     def query(self, question: str) -> dict:
         logger.info(f"Received query: {question}")
-        # Generate an embedding for the question
-        question_embedding = self.embedding_service.generate_embedding(question)
-        if not question_embedding:
-            logger.error("Failed to generate embedding for the question.")
-            return {"answer": "Error generating question embedding."}
-        logger.info("Generated embedding for question.")
-
+        
         # Query the Chroma collection for similar documents
         try:
-            results = self.collection.query(query_embeddings=[question_embedding], n_results=3)
+            # Using query_texts instead of query_embeddings since we're letting ChromaDB handle embeddings
+            results = self.collection.query(
+                query_texts=[question],
+                n_results=3
+            )
             logger.info(f"Retrieved documents from vector store: {results}")
         except Exception as e:
             logger.error(f"Error querying vector store: {e}")
@@ -50,13 +53,10 @@ class ChatbotService:
             {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": f"Using the following context, answer the question concisely.\n\nContext:\n{context}\nQuestion: {question}"}
         ]
-        logger.info(f"Generated messages for API call.")
-
-
-        # Call OpenAI API to generate an answer
+        logger.info(f"Generated messages for API call.")        # Call OpenAI API to generate an answer
         try:
             completion = openai.chat.completions.create(
-                model="gpt-4o-2024-08-06", 
+                model="gpt-4-0125-preview", 
                 messages=messages
             )
             response = completion.choices[0].message.content

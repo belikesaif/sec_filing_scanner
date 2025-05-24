@@ -11,9 +11,9 @@ FILING_TYPES = ["10-K", "10-Q"]
 POLLING_INTERVAL = 3600  # 1 hour
 
 # Data storage paths
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-# Previously used for storing downloaded filings, but now we use the default SEC-EDGAR folder.
-FILINGS_DIR = os.path.join(BASE_DIR, "sec-edgar-filings")
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# Default SEC-EDGAR folder in the docker directory
+FILINGS_DIR = os.path.join(BASE_DIR, "docker", "sec-edgar-filings")
 
 # SEC-EDGAR specific constants
 ROOT_SAVE_FOLDER_NAME = "sec-edgar-filings"
