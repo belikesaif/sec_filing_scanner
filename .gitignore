@@ -27,3 +27,4 @@ data/db/*.db
 .vscode/
 *.swp
 sec-edgar-filings/
+app\embeddings\chromadb
