@@ -35,20 +35,20 @@ class SQLStorage:
         try:
             cursor = self.conn.cursor()
             
-            # Create filings table with improved uniqueness constraint
+            # Update filings table schema to include filing_id in uniqueness constraint
             cursor.execute("""
                 CREATE TABLE IF NOT EXISTS filings (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
                     ticker TEXT NOT NULL,
                     filing_type TEXT NOT NULL,
                     filing_date TEXT NOT NULL,
-                    filing_id TEXT,
+                    filing_id TEXT NOT NULL,
                     file_path TEXT UNIQUE,
                     full_text TEXT,
                     processing_status TEXT DEFAULT 'pending',
                     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                    UNIQUE(ticker, filing_type, filing_date)
+                    UNIQUE(ticker, filing_type, filing_date, filing_id)
                 );
             """)
             
@@ -84,34 +84,53 @@ class SQLStorage:
     def insert_filing(self, ticker: str, filing_type: str, filing_date: str, file_path: str, full_text: str) -> int:
         try:
             # Extract filing_id from file_path
-            filing_id = None
+            filing_id_val = None
             parts = os.path.normpath(file_path).split(os.sep)
             try:
                 # Find the component that looks like an SEC accession number (e.g., 0000320193-17-000070)
-                filing_id = next(p for p in parts if p.count('-') >= 2)
+                filing_id_val = next(p for p in parts if p.count('-') >= 2)
             except Exception:
                 # If we can't extract a filing_id, use the basename as fallback
-                filing_id = os.path.basename(os.path.dirname(file_path))
-            
+                filing_id_val = os.path.basename(os.path.dirname(file_path))
+
             cursor = self.conn.cursor()
-            cursor.execute("""
-                INSERT INTO filings (ticker, filing_type, filing_date, filing_id, file_path, full_text)
-                VALUES (?, ?, ?, ?, ?, ?);
-            """, (ticker, filing_type, filing_date, filing_id, file_path, full_text))
-            self.conn.commit()
-            filing_id = cursor.lastrowid
-            logger.info(f"Inserted filing record with ID {filing_id} for ticker {ticker}.")
-            return filing_id
+            try:
+                cursor.execute("""
+                    INSERT INTO filings (ticker, filing_type, filing_date, filing_id, file_path, full_text)
+                    VALUES (?, ?, ?, ?, ?, ?);
+                """, (ticker, filing_type, filing_date, filing_id_val, file_path, full_text))
+                self.conn.commit()
+                filing_row_id = cursor.lastrowid
+                logger.info(f"Inserted filing record with ID {filing_row_id} for ticker {ticker}.")
+                return filing_row_id
+            except sqlite3.IntegrityError as e:
+                # If unique constraint failed, update the existing record and fetch its id
+                logger.info(f"Filing already exists, updating instead: {e}")
+                cursor.execute("""
+                    SELECT id FROM filings WHERE ticker = ? AND filing_type = ? AND filing_date = ? AND filing_id = ?
+                """, (ticker, filing_type, filing_date, filing_id_val))
+                row = cursor.fetchone()
+                if row:
+                    filing_row_id = row[0]
+                    cursor.execute("""
+                        UPDATE filings SET full_text = ?, file_path = ?, updated_at = CURRENT_TIMESTAMP WHERE id = ?
+                    """, (full_text, file_path, filing_row_id))
+                    self.conn.commit()
+                    logger.info(f"Updated filing record with ID {filing_row_id} for ticker {ticker}.")
+                    return filing_row_id
+                else:
+                    logger.error(f"Filing exists but could not fetch its ID for update.")
+                    return -1
         except sqlite3.Error as e:
-            logger.error(f"Error inserting filing record: {e}")
+            logger.error(f"Error inserting or updating filing record: {e}")
             return -1
 
     def insert_metrics(self, filing_id: int, metrics: dict):
         try:
             cursor = self.conn.cursor()
             cursor.execute("""
-                INSERT INTO metrics (filing_id, revenue, net_income, total_assets, total_liabilities, shareholders_equity)
-                VALUES (?, ?, ?, ?, ?, ?);
+                INSERT INTO metrics (filing_id, revenue, net_income, total_assets, total_liabilities, shareholders_equity, created_at, updated_at)
+                VALUES (?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
             """, (
                 filing_id,
                 metrics.get("revenue"),

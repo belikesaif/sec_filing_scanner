@@ -47,6 +47,8 @@ def update_database():
                 total_assets NUMERIC,
                 total_liabilities NUMERIC,
                 shareholders_equity NUMERIC,
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                 FOREIGN KEY (filing_id) REFERENCES filings (id)
             );
         """)

@@ -238,19 +238,22 @@ if selected_ticker and selected_ticker != "No tickers found":
                 else:
                     st.info("⏳ Charts will be available once metrics are processed")
 
-# Add predefined questions
-PREDEFINED_QUESTIONS = [
-    "What was Apple's total revenue in their latest 10-K filing?",
-    "How has Microsoft's net income changed over the last 3 quarterly reports?",
-    "Compare the total assets of Google and Amazon in their most recent filings.",
-    "What are the key financial metrics for Meta's latest quarterly report?",
-    "Show me the shareholders' equity trend for Apple over the past year.",
-    "What risks did Microsoft mention in their latest annual report?",
-    "How much did Amazon spend on R&D according to their latest filing?",
-    "What are Google's main sources of revenue?",
-    "Summarize Meta's business strategy from their latest 10-K.",
-    "What were the major acquisitions mentioned in Microsoft's recent filings?"
-]
+# Generate dynamic, SQL-answerable questions for the selected ticker
+if selected_ticker and selected_ticker != "No tickers found":
+    latest_10k = filings_df[(filings_df['filing_type'] == '10-K')].sort_values('filing_date', ascending=False).head(1)
+    latest_10q = filings_df[(filings_df['filing_type'] == '10-Q')].sort_values('filing_date', ascending=False).head(1)
+    questions = []
+    if not latest_10k.empty:
+        questions.append(f"What was {selected_ticker}'s total revenue in the latest 10-K filing?")
+        questions.append(f"What was {selected_ticker}'s net income in the latest 10-K filing?")
+        questions.append(f"What are {selected_ticker}'s total assets and total liabilities in the latest 10-K filing?")
+        questions.append(f"What is {selected_ticker}'s shareholders' equity in the latest 10-K filing?")
+    if not latest_10q.empty:
+        questions.append(f"What was {selected_ticker}'s total revenue in the latest 10-Q filing?")
+        questions.append(f"What was {selected_ticker}'s net income in the latest 10-Q filing?")
+    questions.append(f"Show the trend of {selected_ticker}'s revenue over the last 4 quarters.")
+else:
+    questions = []
 
 # Main area - Chat interface
 st.header("Chat with SEC Filings")
@@ -265,10 +268,10 @@ for message in st.session_state.messages:
         st.markdown(message["content"])
 
 # Display predefined questions
-if not st.session_state.messages:  # Only show when chat is empty
+if not st.session_state.messages and questions:  # Only show when chat is empty and questions exist
     st.write("Try these example questions:")
     cols = st.columns(2)
-    for i, question in enumerate(PREDEFINED_QUESTIONS):
+    for i, question in enumerate(questions):
         if i % 2 == 0:
             if cols[0].button(f"❓ {question}", key=f"q_{i}"):
                 response = chat_service.get_answer(question)

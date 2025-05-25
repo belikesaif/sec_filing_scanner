@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 import sys
 from dotenv import load_dotenv
+import argparse
 
 # Load environment variables from .env file
 load_dotenv()
@@ -15,7 +16,7 @@ from app.utils.logger import setup_logger
 
 logger = setup_logger(__name__)
 
-def process_all_filings():
+def process_all_filings(force=False):
     """Process all SEC filings and store them in the database."""
     pipeline = ProcessingPipeline()
     filings_dir = Path(os.path.join(project_root, "docker", "sec-edgar-filings"))
@@ -47,13 +48,16 @@ def process_all_filings():
                 # Look for the full submission file
                 full_submission = filing_date_dir / "full-submission.txt"
                 if full_submission.exists():
-                    logger.info(f"Processing {ticker} {filing_type} from {filing_date_dir.name}")
+                    logger.info(f"Processing {ticker} {filing_type} from {filing_date_dir.name} (force={force})")
                     try:
-                        pipeline.process_and_store(ticker, filing_type, str(full_submission))
+                        pipeline.process_and_store(ticker, filing_type, str(full_submission), force=force)
                     except Exception as e:
                         logger.error(f"Error processing {full_submission}: {e}")
 
 if __name__ == "__main__":
-    logger.info("Starting filing processing...")
-    process_all_filings()
+    parser = argparse.ArgumentParser(description="Process all SEC filings and store them in the database.")
+    parser.add_argument('--force', action='store_true', help='Force reprocessing of metrics for all filings')
+    args = parser.parse_args()
+    logger.info(f"Starting filing processing... (force={args.force})")
+    process_all_filings(force=args.force)
     logger.info("Filing processing complete!")

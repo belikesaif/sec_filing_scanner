@@ -102,11 +102,11 @@ class FilingBrowser:
         
         logger.info(f"Getting filings for ticker: {ticker}")
         
-        # First, get filings from SQLite database
+        # First, get ALL filings from SQLite database (simplified query)
         try:
             cursor = self.sql_storage.conn.cursor()
             
-            # Query both filings and metrics tables with LEFT JOIN to get all filings
+            # Simple query to get all filings for the ticker
             cursor.execute("""
                 SELECT 
                     f.id,
@@ -114,15 +114,8 @@ class FilingBrowser:
                     f.filing_type, 
                     f.filing_id, 
                     f.filing_date, 
-                    f.file_path,
-                    CASE WHEN m.id IS NOT NULL THEN 1 ELSE 0 END as has_metrics,
-                    m.revenue IS NOT NULL 
-                    OR m.net_income IS NOT NULL 
-                    OR m.total_assets IS NOT NULL 
-                    OR m.total_liabilities IS NOT NULL 
-                    OR m.shareholders_equity IS NOT NULL as has_valid_metrics
+                    f.file_path
                 FROM filings f
-                LEFT JOIN metrics m ON f.id = m.filing_id
                 WHERE f.ticker = ?
                 ORDER BY f.filing_date DESC, f.filing_type
             """, (ticker,))
@@ -130,27 +123,37 @@ class FilingBrowser:
             db_filings = cursor.fetchall()
             logger.info(f"Found {len(db_filings)} filings in database for {ticker}")
             
+            # Remove deduplication by filing_id so all filings are included
             for row in db_filings:
+                filing_db_id = row[0]  # database id
                 filing_id = row[3]  # filing_id column
-                if filing_id in seen_filing_ids:
-                    continue
-                    
-                seen_filing_ids.add(filing_id)
                 
                 try:
                     # Convert date string to datetime
                     filing_date = datetime.strptime(row[4], "%Y-%m-%d") if row[4] else datetime.now()
                     
-                    # Only mark as having metrics if there are actual valid metric values
+                    # Check if this filing has valid metrics
+                    cursor.execute("""
+                        SELECT COUNT(*) FROM metrics 
+                        WHERE filing_id = ? 
+                        AND (revenue IS NOT NULL AND revenue != '' 
+                             OR net_income IS NOT NULL AND net_income != ''
+                             OR total_assets IS NOT NULL AND total_assets != ''
+                             OR total_liabilities IS NOT NULL AND total_liabilities != ''
+                             OR shareholders_equity IS NOT NULL AND shareholders_equity != '')
+                    """, (filing_db_id,))
+                    
+                    has_metrics = cursor.fetchone()[0] > 0
+                    
                     filings.append({
                         "ticker": row[1],
                         "filing_type": row[2],
                         "filing_id": filing_id,
                         "filing_date": filing_date,
                         "path": row[5],
-                        "has_metrics": bool(row[7])  # Use has_valid_metrics flag
+                        "has_metrics": has_metrics
                     })
-                    logger.debug(f"Added filing {filing_id} with metrics={bool(row[7])}")
+                    logger.debug(f"Added filing {filing_id} with metrics={has_metrics}")
                 except Exception as e:
                     logger.error(f"Error processing database filing {filing_id}: {e}")
                     continue
