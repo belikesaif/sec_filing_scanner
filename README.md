@@ -196,3 +196,63 @@ If you encounter issues:
    - Verify SEC email is configured correctly
    - Check network connectivity
    - Review logs for download errors
+
+## Standalone Tools and Utilities
+
+The following scripts can be run independently to help with database maintenance, debugging, or batch processing. These are useful for troubleshooting, fixing, or reprocessing data without running the full application.
+
+### `debug_and_fix.py`
+- **Purpose:** All-in-one utility for debugging, verifying, and fixing common issues in your environment and database.
+- **What it does:**
+  - Checks and creates required directories.
+  - Verifies database connection and tables.
+  - Can process all filings in the filings directory.
+  - Prints database statistics and logs issues.
+- **How to use:**
+  ```powershell
+  python debug_and_fix.py
+  ```
+- **When to use:** If you suspect something is wrong with your setup, want to check database health, or need to process all filings from scratch.
+
+### `scripts/update_db.py`
+- **Purpose:** Update the database schema and reprocess metrics if needed.
+- **What it does:**
+  - Ensures all required tables and columns exist in the database.
+  - Adds missing indexes for performance.
+  - Re-extracts and inserts metrics for filings missing them.
+- **How to use:**
+  ```powershell
+  python scripts/update_db.py
+  ```
+- **When to use:** After pulling new code that changes the database schema, or if you see errors about missing columns or metrics.
+
+### `scripts/fix_db.py`
+- **Purpose:** Fix or patch the database schema, especially for adding new columns (like `processing_status`).
+- **What it does:**
+  - Backs up your database before making changes.
+  - Adds missing columns to tables if needed.
+  - Updates NULL values to safe defaults.
+  - Prints summary statistics about filings and metrics.
+- **How to use:**
+  ```powershell
+  python scripts/fix_db.py
+  ```
+- **When to use:** If you see errors about missing columns or want to ensure your database is up to date with the latest schema.
+
+### `scripts/process_filings.py`
+- **Purpose:** Batch process all SEC filings in the filings directory and store them in the database.
+- **What it does:**
+  - Walks through all downloaded filings for all tickers and types.
+  - Extracts and stores data and metrics for each filing.
+  - Can force reprocessing of all metrics with the `--force` flag.
+- **How to use:**
+  ```powershell
+  python scripts/process_filings.py
+  # or to force reprocessing:
+  python scripts/process_filings.py --force
+  ```
+- **When to use:** If you want to reprocess all filings (for example, after fixing a bug in extraction logic or after a schema change).
+
+---
+
+**Tip:** These tools are safe to run multiple times. They are designed to help you recover from most common issues without manual database editing.
