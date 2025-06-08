@@ -54,7 +54,8 @@ def refresh_data():
             st.session_state.vector_service.reload()
             logger.info("VectorSearchService reloaded successfully")
             
-        # Re-initialize services if they don't exist        if not all(service in st.session_state for service in ["metrics_service", "vector_service", "chat_service"]):
+        # Re-initialize services if they don't exist
+        if not all(service in st.session_state for service in ["metrm ics_service", "vector_service", "chat_service"]):
             chat_service, metrics_service, vector_service = init_services()
             st.session_state.chat_service = chat_service
             st.session_state.metrics_service = metrics_service
@@ -177,15 +178,19 @@ if selected_ticker and selected_ticker != "No tickers found":
                                         metrics[k] = v  # Already formatted
                                     else:
                                         # Convert to float and format
-                                        value = float(str(v).replace('$', '').replace(',', ''))
-                                        if abs(value) >= 1_000_000_000:
-                                            metrics[k] = f"${value/1_000_000_000:.2f}B"
-                                        elif abs(value) >= 1_000_000:
-                                            metrics[k] = f"${value/1_000_000:.2f}M"
-                                        else:
-                                            metrics[k] = f"${value:,.2f}"
-                            except (ValueError, TypeError) as e:
-                                st.error(f"Error formatting {k}: {str(e)}")
+                                        try:
+                                            value = float(str(v).replace('$', '').replace(',', ''))
+                                            if abs(value) >= 1_000_000_000:
+                                                metrics[k] = f"${value/1_000_000_000:.2f}B"
+                                            elif abs(value) >= 1_000_000:
+                                                metrics[k] = f"${value/1_000_000:.2f}M"
+                                            else:
+                                                metrics[k] = f"${value:,.2f}"
+                                        except (ValueError, TypeError):
+                                            metrics[k] = "N/A"
+                                            continue
+                            except Exception:
+                                metrics[k] = "N/A"
                                 continue
                     
                     if metrics:
@@ -195,10 +200,9 @@ if selected_ticker and selected_ticker != "No tickers found":
                         with st.expander("ℹ️ Metric Details"):
                             st.text(f"Last Updated: {raw_metrics.get('metrics_updated', 'Unknown')}")
                             st.text(f"Status: {raw_metrics.get('processing_status', 'Completed')}")
-                            
-                            # Show raw values for debugging
-                            with st.expander("🔍 Debug Raw Values"):
-                                st.json(raw_metrics)
+                        # Show raw values for debugging (not nested)
+                        with st.expander("🔍 Debug Raw Values"):
+                            st.json(raw_metrics)
                     else:
                         st.warning("⚠️ No valid metrics found in this filing")
                 else:

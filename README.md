@@ -2,6 +2,21 @@
 
 This project monitors and downloads SEC filings (10-K and 10-Q) for specified stock tickers using the sec-edgar-downloader package. It exposes a FastAPI API to report the scanner status and provides a Streamlit interface for interaction.
 
+## 🚀 SUPER QUICK START
+
+**New users**: Just run one of these:
+- **Windows**: Double-click `setup.bat`
+- **Mac/Linux**: Run `bash setup.sh` 
+- **Any OS**: Run `python setup_launcher.py`
+
+Then follow the prompts! See `QUICK_START.md` for details.
+
+## 📚 Complete Setup Guide
+
+For detailed setup instructions, troubleshooting, and configuration options, see:
+- **`SETUP_README.md`** - Complete setup guide with all options
+- **`QUICK_START.md`** - 2-minute setup for impatient users
+
 ## Quick Start for Everyone
 
 This guide will help you get the SEC Filing Scanner up and running, even if you have no technical background.
