@@ -27,3 +27,8 @@ data/db/*.db
 .vscode/
 *.swp
 sec-edgar-filings/
+app\embeddings\chromadb
+chroma_db/
+chroma_db/*
+*.sqlite3
+*.bin

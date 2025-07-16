@@ -6,16 +6,23 @@ from app.services.chatbot import ChatbotService
 router = APIRouter()
 logger = setup_logger(__name__)
 
-# Instantiate the updated ChatbotService
-chatbot_service = ChatbotService()
-
 class ChatRequest(BaseModel):
     question: str
+
+# Service instance holder
+_chatbot_service = None
+
+def get_chatbot_service():
+    global _chatbot_service
+    if _chatbot_service is None:
+        _chatbot_service = ChatbotService()
+    return _chatbot_service
 
 @router.post("/")
 async def ask_chatbot(request: ChatRequest):
     try:
-        result = chatbot_service.query(request.question)
+        service = get_chatbot_service()
+        result = service.query(request.question)
         logger.info(f"Answered question: {request.question}")
         return result
     except Exception as e:
