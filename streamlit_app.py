@@ -174,21 +174,8 @@ if selected_ticker and selected_ticker != "No tickers found":
                         if k not in ["filing_type", "filing_date", "metrics_created", "metrics_updated", "processing_status"]:
                             try:
                                 if v and str(v).strip():  # Check if value exists and is not just whitespace
-                                    if isinstance(v, str) and v.startswith('$'):
-                                        metrics[k] = v  # Already formatted
-                                    else:
-                                        # Convert to float and format
-                                        try:
-                                            value = float(str(v).replace('$', '').replace(',', ''))
-                                            if abs(value) >= 1_000_000_000:
-                                                metrics[k] = f"${value/1_000_000_000:.2f}B"
-                                            elif abs(value) >= 1_000_000:
-                                                metrics[k] = f"${value/1_000_000:.2f}M"
-                                            else:
-                                                metrics[k] = f"${value:,.2f}"
-                                        except (ValueError, TypeError):
-                                            metrics[k] = "N/A"
-                                            continue
+                                    # Use the MetricsService format_value method for consistent formatting
+                                    metrics[k] = metrics_service.format_value(str(v))
                             except Exception:
                                 metrics[k] = "N/A"
                                 continue

@@ -19,19 +19,44 @@ class MetricsService:
         logger.info("MetricsService reloaded.")
 
     def format_value(self, value: str) -> str:
-        """Format numeric values for display."""
+        """Format numeric values for display using full dollar amounts."""
         if not value:
             return "N/A"
             
         try:
-            value = float(value)
-            # Format large numbers with commas and 2 decimal places
-            if abs(value) >= 1_000_000_000:  # Billions
-                return f"${value/1_000_000_000:.2f}B"
-            elif abs(value) >= 1_000_000:  # Millions
-                return f"${value/1_000_000:.2f}M"
-            else:
-                return f"${value:,.2f}"
+            # Handle values that might still contain unit abbreviations
+            value_str = str(value).strip()
+            
+            # Remove dollar signs and commas for parsing
+            clean_value = value_str.replace('$', '').replace(',', '').strip()
+            
+            # Check for unit abbreviations and convert to full amounts
+            multiplier = 1
+            # Handle patterns with spaces like "500 million" or "2.5 billion"
+            if ' million' in clean_value.lower() or clean_value.lower().endswith('million'):
+                clean_value = clean_value.lower().replace(' million', '').replace('million', '').strip()
+                multiplier = 1_000_000
+            elif ' billion' in clean_value.lower() or clean_value.lower().endswith('billion'):
+                clean_value = clean_value.lower().replace(' billion', '').replace('billion', '').strip()
+                multiplier = 1_000_000_000
+            elif ' thousand' in clean_value.lower() or clean_value.lower().endswith('thousand'):
+                clean_value = clean_value.lower().replace(' thousand', '').replace('thousand', '').strip()
+                multiplier = 1_000
+            elif clean_value.lower().endswith((' m', 'm', ' mil', 'mil')):
+                clean_value = clean_value.lower().replace(' m', '').replace('m', '').replace(' mil', '').replace('mil', '').strip()
+                multiplier = 1_000_000
+            elif clean_value.lower().endswith((' b', 'b', ' bn', 'bn')):
+                clean_value = clean_value.lower().replace(' b', '').replace('b', '').replace(' bn', '').replace('bn', '').strip()
+                multiplier = 1_000_000_000
+            elif clean_value.lower().endswith((' k', 'k')):
+                clean_value = clean_value.lower().replace(' k', '').replace('k', '').strip()
+                multiplier = 1_000
+            
+            # Convert to float and apply multiplier
+            numeric_value = float(clean_value) * multiplier
+            
+            # Format as full dollar amounts with no decimal places for cleaner display
+            return f"${numeric_value:,.0f}"
         except (ValueError, TypeError):
             return str(value)
 

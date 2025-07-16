@@ -42,19 +42,29 @@ class FilingProcessor:
             def convert_to_standard_units(value: str, unit: str = None) -> str:
                 """Convert numbers to standard form based on their units."""
                 try:
-                    value = float(value.replace(',', ''))
+                    # Clean the value string
+                    clean_value = value.replace(',', '').strip()
+                    numeric_value = float(clean_value)
+                    
                     if unit:
-                        unit = unit.lower()
+                        unit = unit.lower().strip()
                         if unit in ['billion', 'b', 'bn']:
-                            value *= 1_000_000_000
+                            numeric_value *= 1_000_000_000
                         elif unit in ['million', 'm', 'mil']:
-                            value *= 1_000_000
-                    return f"{value:.2f}"
+                            numeric_value *= 1_000_000
+                        elif unit in ['thousand', 'k']:
+                            numeric_value *= 1_000
+                    
+                    # Return as string with no decimal places for whole numbers
+                    if numeric_value == int(numeric_value):
+                        return f"{int(numeric_value)}"
+                    else:
+                        return f"{numeric_value:.2f}"
                 except (ValueError, TypeError):
                     return None
 
             # Define number patterns that handle various formats including unit multipliers
-            number_pattern = r'(?:[\$]?\s?)(?:\()?([\d,\.]+)(?:\))?\s*(?:(billion|million|M|B|bn|mil))?'
+            number_pattern = r'(?:[\$]?\s?)(?:\()?([\d,\.]+)(?:\))?\s*(?:(billion|million|thousand|M|B|K|bn|mil|k))?'
             table_row_pattern = r'[\|\s]*(?:Total |Net |Consolidated )?{}\s*[\|\s]*' + number_pattern
             statement_pattern = r'(?:Total |Net |Consolidated )?{}\s*(?:was |of |:)?\s*' + number_pattern
 

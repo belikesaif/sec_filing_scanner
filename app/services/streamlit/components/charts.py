@@ -34,8 +34,12 @@ def create_revenue_chart(ticker: str, metrics_service: MetricsService) -> go.Fig
         yaxis_title="Revenue ($)",
         template="plotly_white",
         hovermode="x",
-        showlegend=True
+        showlegend=True,
+        yaxis=dict(tickformat="$,.0f")
     )
+    
+    # Add hover template for better formatting
+    fig.update_traces(hovertemplate="<b>%{x}</b><br>Revenue: $%{y:,.0f}<extra></extra>")
 
     return fig
 
@@ -68,8 +72,13 @@ def create_metric_chart(ticker: str, metric_name: str, metrics_service: MetricsS
         yaxis_title=f"{metric_name.replace('_', ' ').title()} ($)",
         template="plotly_white",
         hovermode="x",
-        showlegend=True
+        showlegend=True,
+        yaxis=dict(tickformat="$,.0f")
     )
+    
+    # Add hover template for better formatting
+    metric_display = metric_name.replace('_', ' ').title()
+    fig.update_traces(hovertemplate=f"<b>%{{x}}</b><br>{metric_display}: $%{{y:,.0f}}<extra></extra>")
 
     return fig
 
@@ -102,13 +111,47 @@ def create_financial_comparison_chart(ticker: str, metrics_service):
     # Extract the data
     filing_date, revenue, net_income, total_assets, total_liabilities, shareholders_equity = result
     
-    # Convert to numeric values
+    # Convert to numeric values, handling potential unit abbreviations
+    def parse_financial_value(value_str):
+        """Parse financial values that might contain unit abbreviations."""
+        if not value_str:
+            return 0
+        
+        # Clean the string
+        clean_str = str(value_str).replace("$", "").replace(",", "").strip()
+        
+        # Handle unit abbreviations (with and without spaces)
+        multiplier = 1
+        if ' million' in clean_str.lower() or clean_str.lower().endswith('million'):
+            clean_str = clean_str.lower().replace(' million', '').replace('million', '').strip()
+            multiplier = 1_000_000
+        elif ' billion' in clean_str.lower() or clean_str.lower().endswith('billion'):
+            clean_str = clean_str.lower().replace(' billion', '').replace('billion', '').strip()
+            multiplier = 1_000_000_000
+        elif ' thousand' in clean_str.lower() or clean_str.lower().endswith('thousand'):
+            clean_str = clean_str.lower().replace(' thousand', '').replace('thousand', '').strip()
+            multiplier = 1_000
+        elif clean_str.lower().endswith((' m', 'm', ' mil', 'mil')):
+            clean_str = clean_str.lower().replace(' m', '').replace('m', '').replace(' mil', '').replace('mil', '').strip()
+            multiplier = 1_000_000
+        elif clean_str.lower().endswith((' b', 'b', ' bn', 'bn')):
+            clean_str = clean_str.lower().replace(' b', '').replace('b', '').replace(' bn', '').replace('bn', '').strip()
+            multiplier = 1_000_000_000
+        elif clean_str.lower().endswith((' k', 'k')):
+            clean_str = clean_str.lower().replace(' k', '').replace('k', '').strip()
+            multiplier = 1_000
+        
+        try:
+            return float(clean_str) * multiplier
+        except (ValueError, TypeError):
+            return 0
+    
     metrics = {
-        "Revenue": float(revenue.replace("$", "").replace(",", "")) if revenue else 0,
-        "Net Income": float(net_income.replace("$", "").replace(",", "")) if net_income else 0,
-        "Total Assets": float(total_assets.replace("$", "").replace(",", "")) if total_assets else 0,
-        "Total Liabilities": float(total_liabilities.replace("$", "").replace(",", "")) if total_liabilities else 0,
-        "Shareholders' Equity": float(shareholders_equity.replace("$", "").replace(",", "")) if shareholders_equity else 0
+        "Revenue": parse_financial_value(revenue),
+        "Net Income": parse_financial_value(net_income),
+        "Total Assets": parse_financial_value(total_assets),
+        "Total Liabilities": parse_financial_value(total_liabilities),
+        "Shareholders' Equity": parse_financial_value(shareholders_equity)
     }
     
     # Create a DataFrame
@@ -130,16 +173,17 @@ def create_financial_comparison_chart(ticker: str, metrics_service):
     fig.update_layout(
         xaxis_title="Financial Metric",
         yaxis_title="Amount ($)",
-        height=400
+        height=400,
+        yaxis=dict(tickformat="$,.0f")
     )
+    
+    # Add hover template for better formatting
+    fig.update_traces(hovertemplate="<b>%{x}</b><br>Amount: $%{y:,.0f}<extra></extra>")
     
     return fig
 
 def format_currency(value: float) -> str:
-    """Format large numbers into B/M notation."""
-    if value >= 1_000_000_000:
-        return f"${value/1_000_000_000:.1f}B"
-    elif value >= 1_000_000:
-        return f"${value/1_000_000:.1f}M"
-    else:
-        return f"${value:,.0f}"
+    """Format numbers as full dollar amounts."""
+    if not value or value == 0:
+        return "$0"
+    return f"${value:,.0f}"
